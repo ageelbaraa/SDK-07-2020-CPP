@@ -1,0 +1,123 @@
+Download this file from the site Rafea educational programming C + +
+Example ( programme print **** - for & while )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( for - programme print **** )
+
+-----------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+void main()
+{
+	/*programme print =
+		*
+		**
+		***
+		****
+		******/
+	
+	for(int i=1;i<=5;i++)//i<=5
+	{
+		for(int j=1;j<=i;j++)//j<=i
+			cout<<"*";
+			cout<<endl;
+	}
+
+}
+----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+	/*programme print =
+		*
+		 *
+		  *
+		   *
+		    */
+	
+	for(int i=1;i<=5;i++)//i<=5  -- if i<=0 = NO Output
+	{
+		for(int x=1;x<=i;x++)//j<=i
+			cout<<" ";
+
+		for(int j=i;j<=i;j++)
+			cout<<"*";
+		cout<<endl;
+	}
+	
+
+}
+----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+//programme print = *****
+	
+	int i,j;
+	for( i=1;i<=15;i++)
+	{
+		for( j=1;j<=5;j++)
+		{
+			i=i+2;
+			cout<<"*";
+		}
+		cout<<endl;
+	
+	}
+
+}
+------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+	/*programme print =
+		1
+		12
+		123
+		1234
+		12345/
+	
+	for(int i=1;i<=9;i++)
+	{
+		for(int j=0;j<i;j++)
+			cout<<j+1;
+			cout<<" ";
+			cout<<endl;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+Example ( While - programme print **** )
+-------------------------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{
+
+
+	int count=1;
+
+	while (count<=10)
+	{
+		cout<<(count%2? "****" : "++++++++")<<endl;
+		++count;
+	}
+	
+			
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+void Num(int &x , int &y, int &z)
+{
+
+	x=x*2;
+	y=y*2;
+	z=z*2;
+	return;
+	cout<<"Helo"; // not print
+}
+int main()
+{
+	int x=1,y=3,z=5;
+	Num (x,y,z);
+	cout<<"x = "<<x<<"\ny = "<<y<<"\nz = "<<z<<endl;
+	return 0;
+	
+}

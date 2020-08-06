@@ -1,0 +1,98 @@
+Download this file from the site Rafea educational programming C + +
+Example ( Exam to for cs102 Lab in LAB 6 )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( Exam to for cs102 Lab in LAB 6 )
+
+-----------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+void main()
+{
+	int i;
+	
+	for(i=1, cout<<"Ali\n" ; i<=5 ;i++)
+	{
+	cout<<"Rafea \t";
+	cout<<"Hello\n";
+	}
+
+	cout<<"\nWelcome your Visited\n"<<endl;
+
+
+}
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+	
+	
+	for(int i=1 && cout<<"A" ; i<=5;i++ , cout<<"B")// if write || = C:B
+	
+	cout<<"C"<<endl;;
+
+	cout<<"\n\nWelcome your Visited\n"<<endl;
+
+
+}
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+	
+	int i=1;
+	for(;;)
+	
+	{
+		if (i==5)
+			break;
+
+	cout<<"C"<<++i<<endl;
+	}
+cout<<i<<endl;
+}
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+//for(;;)
+	
+	int i=1;
+	for(;;)
+	{
+		if (i==5)
+		{cout<<"C"<<++i<<endl;
+		break;}
+		i++; // if write --i; ==> rubbish (not)
+	
+	}
+
+}
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+// factorail and num
+	int num,fact=1;
+	cout<<"please insert num";
+	cin>>num;
+
+	
+
+	for(int i=1;i<=num;i++ )
+	
+		fact*=i;
+	cout<<"The Factorail of"<<num<<"is"<<fact<<endl;
+	
+	
+
+}
+

@@ -1,0 +1,209 @@
+Download this file from the site Rafea educational programming C + +
+Example ( c++ )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int whole;
+	float fractional;
+	char letter;
+	cout<<"enter an float integer char\n";<<endl;	
+	cin>> whole >> fractional >> letter>>"\n";
+	cout<<"whole:" << fractional << letter;<<endl;	
+	cout<<"whole:"<<whole<<endl;
+	cout<<"fractional:"<<fractional<<endl;
+	cout<<"letter:"<<letter<<endl;	
+
+	return 0;
+
+
+}
+------------------------------------------------
+#include <iostream> //line1
+using namespace std; //line2
+int main ()   //line3
+{             //line4
+
+
+
+	/*declaration identifier */
+	int age;   //line5
+
+	cout<<"enter age:"; //prompt stat
+	cin>>age; //input stat
+	cout<<"your age is:"; //echo-stata
+
+	cout<<age; //output stat
+	cout<<endl; //line6
+
+
+
+
+
+
+	return 0;
+
+
+
+}
+------------------------------------------------
+#include <iostream>
+using namespace std;
+int main()
+{
+
+	int a=0;
+	
+	cout<<"number\t"<<"square\t"<<"cube"<<endl;
+	cout<<a<<"\t"<<a*a<<"\t"<<a*a*a	<<endl;
+	cout<<++a<<"\t"<<a*a<<"\t"<<a*a*a<<endl;
+	cout<<++a<<"\t"<<a*a<<"\t"<<a*a*a<<endl;
+	cout<<++a<<"\t"<<a*a<<"\t"<<a*a*a<<endl;
+	cout<<++a<<"\t"<<a*a<<"\t"<<a*a*a<<endl;
+	cout<<++a<<"\t"<<a*a<<"\t"<<a*a*a<<endl;
+	return 0;
+
+
+}
+------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+   int i = 1, j = 2,x;
+   x= (i > j ? i : j )*2 ;
+   cout<<x;
+  
+}
+------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+   int i = 1, j = 2,x;
+   cout << ( i > j ? i : j ) << " is greater." << endl;
+   //            and   else
+}
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int age;
+	cout<<"please enter your age"<<endl;
+	cin>>age;
+	cout<<"your age you have entered is"<<age<<endl;
+	++age;
+	--age;
+	cout <<endl;
+	cout <<"your age is"<<age<<endl;
+	
+}
+
+------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+int main ()
+{
+	int age;
+	string name;
+	cout<<"please enter your name\n";
+			cin>>name;
+	cout<<"your name is"<<name<<endl;
+	//int age;
+	cout<<"please enter your age"<<endl;
+	cin>>age;
+	cout<<"your age you have entered is"<<age<<endl;
+	//age=age+10;
+	//--age;
+	cout <<endl;
+	cout <<"your age is"<<age+10<<endl;
+	
+}
+------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+int main ()
+{
+	//int age;
+	string name,address;
+	cout<<"please enter your name\n";
+			cin>>name;
+cout<<"your name is"<<name<<endl;
+	//int age;
+cin.ignore(150,'\n');
+cout<<"please rnter your full adress"<<endl;
+getline(cin,adress);
+cout<<"your adress is"<<adress<<end;
+
+
+}
+------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+int main ()
+{
+	char c;
+	string str;
+	int i;
+
+	getline(cin, str, '\n');
+	cout<<str<<endl<<endl;
+	cin.get(c);
+	cout>> i;
+	cout<<i<<endl<<end;
+}
+------------------------------------------------
+#include <iostream>
+using namespace std;
+void main ()
+{
+	
+	cout<<"pleace enter five decimal numbers"<<endl;
+	int a,b,c,d,e;
+	int sum,product,avg;
+	cin>> a>> b>> c>> d>> e;
+	//cout>>"the product of the numbers your have etaceted"<<a*b*c*d*e<<endl;
+    sum=a+b+c+d+e;
+	product=a*b*c*d*e;
+	avg=sum/5;
+
+	cout<<sum<<product<<avg<<endl;
+
+
+}
+------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	cout<<"Meter Or Feet ??\n";
+	cout<<"1: Change Feet to Meters, 2: Change Meters to Feet.\n";
+	cout<<"Whats your Choice: \n";
+	int choice;
+	double feet ,meter;
+	cin>>choice;
+	if (choice==1)
+	{
+		cout<<"Enter number of feet:";
+		cin>> feet;
+		cout<<"Meters = "<<feet/0.3048;
+	}
+	else if (choice==2) 
+		cout<<"Enter number of meter:";
+		cin>> meter;
+		cout<<"feet = "<<meter*3.048;
+
+
+	return 0;
+}
+
+
+
+	

@@ -1,0 +1,19 @@
+#include <iostream>
+//#include <cmath>
+#include <cctype>
+using namespace std;
+int main()
+{
+
+
+	//cout<<exp(4.0); // Output = 54.5982
+	cout<<tolower(65.5)<<endl; // Output = 97
+	cout<<tolower('A')<<endl;
+	cout<<tolower(65)+5<<endl;
+	cout<<tolower(97)+5<<endl;
+	cout<<toupper(97)+5<<endl;
+	cout<<toupper('a')<<endl;
+	cout<<static_cast<char>('a')<<endl;
+
+	int x=toupper('a')+(5)<<endl;
+}

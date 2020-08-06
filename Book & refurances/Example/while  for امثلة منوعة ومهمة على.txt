@@ -1,0 +1,346 @@
+#include <iostream>
+using namespace std;
+void main ()
+{
+char a ;
+cin>>a;
+while ( a != '!' )
+{
+cin>>a;
+char x;
+x=a;
+switch (a)
+{
+case 'A':
+cout<<x;
+break;
+case 'B':
+cout<<x;
+break;
+case 'C':
+cout<<x;
+break;
+case 'D':
+cout<<x;
+break;
+case 'E':
+cout<<x;
+break;
+case 'F':
+cout<<x;
+break;
+case 'G':
+cout<<x;
+break;
+case 'H':
+cout<<x;
+break;
+case '!':
+cout<< "u enter ! that end the bro ";
+break;
+default :
+cout<<"wrong enter";
+break;
+
+}
+}
+}
+
+-----------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int i;
+int j;
+for (i=1; i<=12; i++)
+{
+cout<<"Multiply tabel for("<<i<<").\n____________________________________\n";
+for (j=1; j<=12; j++)
+cout<< j<<" * " <<i<<" = "<<i*j<<"\n";
+cout<<"\n";}
+
+return 0;
+}
+
+----------------------------------------------------
+#include <iostream>
+using namespace std;
+void main ()
+{
+int n=0;
+char q='a' ;//q is character
+int An=0,Bn=0,Cn=0,Dn=0,En=0,Fn=0,Zn=0;
+
+while (q!='!')
+{
+cout<<"Enter your characters and if you want to stop entering characters enter <!> ";
+cin>>q;
+n=n+1;
+switch (q)
+{
+case 'A':
+An=An+1;
+break;
+case 'B':
+Bn=Bn+1;
+break;
+case 'C':
+Cn=Cn+1;
+break;
+case 'D':
+Dn=Dn+1;
+break;
+case 'E':
+En=En+1;
+break;
+case 'F':
+Fn=Fn+1;
+break;
+default:
+Zn=Zn+1;
+}
+}
+
+int i=1;
+cout<<endl;
+while (i<=15)
+{
+
+cout<<"^_^ ";
+i++;
+
+}
+cout<<endl<<endl;
+cout<<"you have entered "<<n<<" characters and : "<<endl<<endl;
+cout<<"A is repeated "<<An<<" times ."<<endl;
+cout<<"B is repeated "<<Bn<<" times ."<<endl;
+cout<<"C is repeated "<<Cn<<" times ."<<endl;
+cout<<"D is repeated "<<Dn<<" times ."<<endl;
+cout<<"E is repeated "<<En<<" times ."<<endl;
+cout<<"F is repeated "<<Fn<<" times ."<<endl;
+cout<<"other characters are repeated "<<Zn<<" times"<<endl;
+}
+------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main ()
+{
+char chr1;
+int a=0,b=0,c=0,d=0,e=0,f=0,cunt=0,def=-1,smil=0 ;
+do
+{
+cunt++;
+cout<<"Enter your characters and if you want to stop entering characters enter <!> ";
+cin>>chr1;
+switch(chr1)
+{
+case 'A':
+a+=1;
+break;
+case 'B':
+b+=1;
+break;
+case 'C':
+c+=1;
+break;
+case 'D':
+d+=1;
+break;
+case 'E':
+e+=1;
+break;
+case 'F':
+f+=1;
+break;
+default:
+def+=1;
+}
+}
+while (chr1!='!');
+cout<<"\n\n\n\n";
+while (smil<15)
+{
+cout<<"^_^ ";
+smil++;
+}
+cout<<"\n\n\n\nYou have entered "<<cunt<<" characters and :\n";
+cout<<"A is repeated "<<a<<" times.\n";
+cout<<"B is repeated "<<b<<" times.\n";
+cout<<"C is repeated "<<c<<" times.\n";
+cout<<"D is repeated "<<d<<" times.\n";
+cout<<"E is repeated "<<e<<" times.\n";
+cout<<"F is repeated "<<f<<" times.\n";
+cout<<"Other characters are repeated "<<def<<" times.\n";
+
+}
+
+----------------------------------------------------------
+
+#include<iostream>
+using namespace std ;
+int main ()
+{
+int x,num1=0,sum1=0,num2=0,sum2=0,N,S,N2,S2;
+cout<<" please Enter a number ";cin>>x;
+if(x%2==0){
+N=num1++;
+S=sum1+=x;
+}
+
+else if(x%2!=0){
+
+N2=num2++;
+S2=sum2+=x;
+}
+
+
+while (x!=0)
+{
+cout<<" please Enter a number ";cin>>x;
+if(x%2==0){
+N=num1++;
+S=sum1+=x;
+}
+else if(x%2!=0)
+{
+N2=num2++;
+S2=sum2+=x;
+}
+}
+cout<<"You have Enter "<< N<<"Even Number and thier Summation is "<<S<<endl<<endl;
+cout<<"you have Enter "<<N2+1<<"Odd number and thier Summation is "<<S2<<endl<<endl;
+return 0;
+}
+
+-----------------------------------------------------------
+Ìÿ»⁄ «ﬂ»— —ﬁ„ Ê«’€— —ﬁ„
+-----------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+int number,counter;
+int max,min;
+counter = 1;
+
+cout << "Enter your numbers: " << endl;
+cin >>number;
+max = min =number; //at the first number eqaual max and min.
+while(counter<4)
+{
+cin>>number;
+if(min>number)
+min=number;
+else if(max<number)
+max=number;
+counter++;
+}
+cout<<"The Largest number is " << max << endl;
+cout<<"The lowest number is " << min << endl;
+
+}
+
+--------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+void main()
+{
+int n;
+cout<<"please enter num : ";
+cin>>n;
+int sum=0;
+int x;
+for( x=0;x<=n;x++)
+{sum=sum+(x*x+x+5);
+}
+cout<<"the sum is"<<sum;
+
+cout<<endl;
+
+}
+
+--------------------------------------------------------------
+
+//rami mayyas......... ID :20122171018
+// i made this program to let the user to enter characters until he\sh press enter
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+int number_of_input_times=0;//„⁄—›… Õ«·Â« »Õ«·Â« :)
+bool condition=true;//the condition that let the compiler enter in the while loop
+string input;//the input that the user will enter
+cout<<"**if you want to stop entering characters,\njust enter the word 'return' \n\n\n";
+while(condition==true)
+{
+cout<<"\nplease enter any character(s) you want or\n enter the word 'return' to end the entering : ";
+cin>>input;//to enter the character(s)
+cout<<endl;
+number_of_input_times++;
+if(input=="return")
+condition=false;
+continue;
+
+}
+cout<<"\n^_^ ^_^ ^_^ ^_^ ^_^ ^_^ \n";//just for give the program nice shape (“‰«Œ…)
+cout<<"\n\nthe number of character(s) that you have entered is : "<<--number_of_input_times<<"\n";
+return 0;
+}
+
+-----------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main ()
+{
+
+char x='a' ;
+int An=0,Bn=0,Cn=0,Dn=0,En=0,Fn=0,Zn=0;//An,Bn,Cn...etc are the number of characters entered by user .
+
+
+while (x!='!')
+{
+cout<<"Enter your characters and if you want to stop entering characters enter <!> ";
+cin>>x;//X Is the characters
+
+switch (x)
+{
+case 'A':
+An=An+1;
+break;
+case 'B':
+Bn=Bn+1;
+break;
+case 'C':
+Cn=Cn+1;
+break;
+case 'D':
+Dn=Dn+1;
+break;
+case 'E':
+En=En+1;
+break;
+case 'F':
+Fn=Fn+1;
+break;
+default:
+Zn=Zn+1;
+}
+}
+
+int i=1;
+cout<<endl;
+
+cout<<endl<<endl;
+
+cout<<"A is repeated "<<An<<" times ."<<endl;
+cout<<"B is repeated "<<Bn<<" times ."<<endl;
+cout<<"C is repeated "<<Cn<<" times ."<<endl;
+cout<<"D is repeated "<<Dn<<" times ."<<endl;
+cout<<"E is repeated "<<En<<" times ."<<endl;
+cout<<"F is repeated "<<Fn<<" times ."<<endl;
+cout<<"other characters are repeated "<<Zn<<" times"<<endl;
+}

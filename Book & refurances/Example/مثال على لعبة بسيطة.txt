@@ -1,0 +1,32 @@
+Download this file from the site Rafea educational programming C + +
+Example ( Games )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example (Games)
+
+-----------------------------------------------------------------
+
+
+#include <iostream>//Games
+using namespace std ;
+int main()
+{ //Games
+	
+	int c=1,x;
+	bool g= false;
+		while (g==false && c<=10)
+		{
+			//continue;
+			c++;
+			cin>>x;
+			
+			if (x==10)
+			{cout<<"\nbravoo"<<endl;break;}
+			else // or write else if (c<5)
+				cout<<"Try again\n";
+		}
+	cout<<"Good By\n\n";
+	return 0;
+}

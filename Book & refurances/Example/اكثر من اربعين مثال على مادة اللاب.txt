@@ -1,0 +1,1143 @@
+#include <iostream>
+using namespace std;
+long int fact(int x)
+{
+	int i=x;
+	int y=1;
+	
+    for(i=x;i>0;i--)
+	y=y*i;
+	
+	return y;
+
+}
+int main()
+{
+	int a;
+	cout<<"enter the number : ";
+	cin>>a;
+	cout<<fact(a);
+}
+----------------------------------------------------------------------------------------------------------
+Write a program that prompts the user to insert a number and find if this number
+is multiple of 3 „÷«⁄›«  «·—ﬁ„ 3 and it is between 9 and 51 then prints ìGood numberî
+else if it is multiple of 5 then prints ìDonít Worryî otherwise prints ìNever mindî
+The Output is as the following:
+Please insert a number: 12 ? Good Number
+Please insert a number: 10 ? Donít Worry
+Please insert a number: 60 ? Donít Worry
+Please insert a number: 63 ? Never mind*/
+#include<iostream>
+using namespace std;
+void main ()
+{
+int x;
+cout<<"Insert a number : ";
+cin>>x;
+
+if (x>=9 && x<=51 && x%3==0)
+cout<<"Good number "<<endl;
+else if (x%5==0)
+cout<<"Dont worry"<<endl;
+else
+cout<<"Never mind"<<endl;
+}
+----------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int summation(int x)
+{
+	int y=0,i;
+	
+	for(i=1;i<=x;i++)
+		y=y+i;
+	return y;
+
+}
+
+int main()
+{
+	int a;
+	cout<<"enter the number : ";
+	cin>>a;
+	cout<<summation(a);
+}
+----------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void reduce(int x,int y) 
+{
+	int i; 
+	
+	for(i=x;i>0;i--) 
+	{
+		if(x%i==0 && y%i==0) 
+			break;
+	} 
+	
+	cout << x/i << "/" << y/i;
+
+}
+int main()
+{
+	int a,b;
+	cout << "enter a : ";
+	cin >> a;
+	cout << "enter b : ";
+	cin >> b;
+	reduce(a,b);
+	cout << endl;
+}
+----------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void swap(float x,float y) 
+{
+	float z; 
+	z=x; 
+	x=y; 
+	y=z; 
+	
+	cout<<"a="<<x; 
+	cout<<"\tb="<<y;
+}
+int main()
+{
+	float a=7.5,b=3.5;
+	cout<<"befor the swap a="<<a<<"\tb="<<b;
+	cout<<"\nafter the swap ";swap(a,b);
+}
+----------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num1,num2;
+	int sum2=0,sum1=0;
+	cout<<"Enter two numbers: ";
+	cin>>num1>>num2;
+	cout<<"odd numbers between the 2 numbers: ";
+
+	while(num1<num2)
+	{
+		if (num1%2==1)
+		{
+			cout<<num1<<" ";
+			sum1+=num1*num1;
+		}
+		else sum2++;
+		if (num1>1 && num1<10)
+			cout<<num1<<" "<<num1*num1<<" ";
+
+		num1++;
+
+	}
+	cout<<"sum of all even numbers: "<<sum2<<"\n";
+	cout<<"sum of the square of the odd numbers: "<<sum1<<"\n";
+	return 0;
+}
+----------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int some_from_to(int x,int y) 
+{
+	int i,z=0; 
+	
+	for(i=x;i<=y;i++) 
+		z=z+i; 
+	return z;
+}
+
+int main()
+{
+	int a,b;
+	cin >> a >> b;
+	cout<<some_from_to(a,b);
+}
+----------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main ()
+{
+int a,even=0,odd=0;
+cout<<"Enter Number:";
+cin>>a;
+while (a!=0)
+{
+	if (a%2==0)
+	{
+
+		cout<<"the Number is Even "<<a<<endl;
+	even=even+a;
+	}
+	else
+	{
+    cout<<"the Number is odd "<<a<<endl;
+
+	odd=odd+a;
+
+	
+
+	}
+	cout<<"Enter Number:";
+cin>>a;
+}
+cout<<" the sum of even numbers ="<<even<<endl;
+cout<<" the sum of odd numbers ="<<odd<<endl;
+
+
+return 0;
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Prime or noT Prime
+#include <iostream>
+using namespace std ;
+void main()
+{
+	int num,t=3;bool b=true;
+	cout<<"Enter your number: ";cin>>num;
+	if (num==2||num==3)
+		cout<<"prime number\n";
+	if (num==1||num%2==0&&num!=2)
+		cout<<"not prime number\n";
+	if (num%2!=0)
+	{ while (t<num&&b==true)
+	  {if (num%t!=0)
+	{b=true;t=t+2;}
+	  else 
+	   b=false;}
+	if (b==true&&num!=3&&num!=1)
+		cout<<"prime number\n";
+	else if (b==false&&num!=3&&num!=1)
+	cout<<"not prime number\n";
+    }
+	// i hope the task complet successfully.
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# include <iostream>
+using namespace std;
+int main ()
+{
+int x,i,j;
+cout<<"enter the size : ";
+cin>>x; 
+for(i=0;i<x;i++) 
+{
+for(j=0;j<x;j++)
+{
+if(i==0 || i==x-1 || j==0 || j==x-1)
+cout<<"*";
+else
+cout<<" ";
+}
+cout<<"\n";}
+return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// mothlath
+#include<iostream>
+using namespace std;
+int main ()
+{
+int i,j;
+for(i=1;i<=10;i++)
+{
+for(j=1;j<=i;j++)
+cout<<"*";
+cout<<endl;
+}
+
+return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//the programm will cout even numbers
+#include<iostream>
+using namespace std;
+int main ()
+{
+int num,i;
+cout<<"Enter Number: ";
+cin>>num;
+for(i=1;i<=num;i++)
+{
+if (i%2==0)
+cout<<i;
+
+}
+	return 0;
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace  std;
+void main ()
+{
+int i,j;
+for(i=1;i<=10;i++)
+{
+for(j=10;j>=i;j--)
+cout<<"*";
+cout<<endl;
+}
+
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+bool isEven(int num1);
+void main()
+{
+	int num;
+	cout<<"insart number : ";
+	cin>>num;
+	if(isEven(num))
+		cout<<num<<" is even "<<endl;
+	else 
+		cout<<num<<" is odd "<<endl;
+}
+bool isEven(int num1)
+{
+	if(num1%2==0)
+		return true ;
+	else 
+		return false;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+double largr();
+void main()
+{
+	cout<<"the large intger is : "<<largr()<<endl ;
+}
+double largr()
+{
+	 int i = 1; 
+    int num = 0 ;
+    int large ;
+	large = num;
+    while (i < 10)
+    {
+        cout<<"insert an intger : ";
+		cin >> num;
+        if (num > large)
+        {
+            large = num;
+        }
+              i++;
+	}
+	return large;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int i,product=1,num; 
+	cout<<"Enter Number :";
+	cin>>num;
+	for(i=1;i<=num;i++)
+	  {
+		  if (i%2!=0)
+			  product*=i;
+	  }
+	cout<<"The Product of Integer Number From 1 to N is: "<<product<<"\n";
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+bool iseven (int a)
+
+{
+	if(a%2==0)
+		return true ;
+	else 
+		return false ;
+
+}
+void main ()
+{
+	double num;
+	cout<<"enter Number ";
+	cin>>num; //isnert by the user
+	if (iseven(num))
+		cout<<"even"<<endl;
+	else
+		cout<<"odd"<<endl;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std ;
+bool isVowel (char text)
+{
+if(text=='a'||text=='A'||text=='e'||text=='E'||text=='i'||text=='I'||text=='o'||text=='O'||text=='u'||text=='U')
+return true;
+else
+return false;
+}
+
+void main ()
+{
+int x=0;
+char text;
+cout<<"insert a sequence of characters: ";
+cin>>text;
+if (isVowel(text)==true)
+cout<<"The Charctor is Vowel"<<endl;
+else if (isVowel(text)==false)
+cout<<"The Charctor Is Notvowel"<<endl;
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<cmath>
+using namespace std ;
+int main()
+{
+	double x,y;
+	int choice;
+	
+cout<<"Insert X,Y Parimeters :";
+	cin>>x>>y;
+	cout<<"What Do You Want to Comput (1 or 2 ):";
+	cin>>choice;
+	
+switch (choice)
+{
+case 1:
+	cout<<pow(x,2)+x*y-2<<endl;
+	break;
+
+case 2:
+	cout<<pow(x,3)+2*x-2<<endl;
+	break;
+
+default :
+	cout<<"Illeagal Insert "<<endl;
+
+
+
+
+}
+
+return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std ;
+void Draw (int x);
+
+void main ()
+{
+	int x;
+cout<<"please Insert Number ";
+cin>>x;
+Draw (x);
+
+}
+
+
+void Draw (int x)
+{
+for(int i=1;i<=x;i++)
+{
+for(int a=1;a<=i;a++)
+cout<<i;
+cout<<endl;
+
+
+}
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std ;
+char courseGrade (int grade);
+void main ()
+{
+int grade;
+cout<<"Please, Inset Your Grade : ";
+cin>>grade; //insert by the user 
+cout<<"Your Grade is "<<courseGrade(grade)<<endl;
+
+}
+
+
+char courseGrade (int grade)
+{
+	if (grade>=90 && grade<=100)
+		return 'A';
+	else if (grade>=80 && grade<90)
+		return 'B';
+	else if (grade>=70 && grade<80)
+		return 'C';
+	else if (grade>=60 && grade<70)
+		return 'D';
+	else if (grade>=50 && grade<60)
+		return 'E';
+	else 
+		cout<<"illegal Insert"<<endl;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std ;
+bool num(int x )
+{
+	
+for(int i=0;i<x;i++) 
+{
+for(int j=0;j<x;j++)
+{
+if(i==0 || i==x-1 || j==0 || j==x-1)
+cout<<"*";
+else
+cout<<" ";
+}
+cout<<"\n";}
+return true ;
+}
+void main ()
+{
+
+int x;
+cout<<"enter the size : ";
+cin>>x; 
+cout<<num(x);
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+void input(int &num1,int &num2);
+int equation(int num1,int num2);
+void print_result(int result);
+void main()
+{
+	int num1,num2,result;
+	input(num1,num2);
+	result=equation (num1, num2);
+	print_result(result);
+
+}
+void input(int &num1,int&num2)
+{
+	cout<<"insert two integer number: ";
+	cin>>num1>>num2;
+}
+int equation(int num1,int num2)
+{
+	return pow(num1,3.0)+pow(num2,2.0)-2;
+}
+void print_result(int result)
+{
+	cout<<"the result of equation x^3+x^2-2 = "<<result<<endl;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// the main purpose of this programis: practice how to use array.
+#include <iostream>
+using namespace std;
+void main()
+{
+	char charactor[5];// declaring array identifiers.
+	for (int index=0;index<5;index++)// loop statement give the array space charactor.
+	{
+		charactor[index]=' ';
+	}
+	cout<<"now insert the array element from charactor a to charactor e:";
+	for (int index=0;index<5;index++)// loop statement give the array espitial charactor.
+	{
+		cin>>charactor[index];
+
+	}
+	cout<<"now we will print the array element from index 0 to index 4:\n";
+		for (int index=0;index<5;index++)// for loop print array element.
+		{
+			cout<<charactor[index]<<"  ";
+		}
+		cout<<endl;
+		// the task complet successfully.
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// the main purpose of this programis: practice how to use array.
+#include <iostream>
+using namespace std;
+void main()
+{
+	char charactor[5];// declaring array identifiers.
+	for (int index=0;index<5;index++)// loop statement give the array space charactor.
+	{
+		charactor[index]=' ';
+	}
+
+	cout<<"now insert the array element from charactor a to charactor e:";
+
+	for (int index=0;index<5;index++)// loop statement give the array espitial charactor.
+	{
+		cin>>charactor[index];
+
+	}
+
+	cout<<"now we will search the c charactor in array element from index 0 to index 4:\n";
+
+	for (int index=0;index<5;index++)// for loop print array element.
+	{
+		if(charactor[index]=='c')
+			cout<<"I found 'c' at index: "<<index<<endl; 
+	}
+	
+	// the task complet successfully.
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// the main purpose of this programis: practice how to use array.
+#include <iostream>
+using namespace std;
+void main()
+{
+	char charactor[5];// declaring array identifiers.
+	for (int index=0;index<5;index++)// loop statement give the array space charactor.
+	{
+		charactor[index]=' ';
+	}
+
+	cout<<"now insert the array element from index 0 to index 4:";
+
+	for (int index=0;index<5;index++)// loop statement give the array espitial charactor.
+	{
+		cin>>charactor[index];
+
+	}
+
+	cout<<"now we will search the vowel charactor in array element from index 0 to index 4 and replace it with 'V':\n";
+	
+	for (int index=0;index<5;index++)// for loop print array element.
+	{
+		if(charactor[index]=='A'||charactor[index]=='E'||charactor[index]=='O'||charactor[index]=='I'||charactor[index]=='U'||charactor[index]=='a'||charactor[index]=='e'||charactor[index]=='o'||charactor[index]=='i'||charactor[index]=='u')
+		{cout<<"we replace the vowel "<<charactor[index]<<" in index "<<index<<" to CHARACTOR 'V'\n";
+		charactor[index]='V';}
+	}
+	
+	// the task complet successfully.
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// the main purpose of this programis: practice how to use array.
+#include <iostream>
+using namespace std;
+void main()
+{
+	int arr[10],sum=0;// declaring identifiers.
+	cout<<"insert 10 integer value to array:\n";// alert statement.
+	for(int index=0;index<10;index++)
+	{
+		cin>>arr[index];
+		sum+=arr[index];
+	}
+	cout<<"the summation of array element is: "<<sum<<"\nthe average of array element is: "<<sum/10.0<<endl;// this statement print result.
+	// the task complet successfully.
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Function 
+#include<iostream>
+//#include<cmath>
+using namespace std ; 
+void inputGrade(int& courseGrade){
+	cout<<"Please Insert Your Course Grade as int Value : ";
+	cin>>courseGrade;
+}
+
+void main ()
+{
+int grade; 
+inputGrade(grade);
+cout<<"Your Grade is : "<<grade<<endl;
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+//prototype
+float sum(float num1,float num2);
+void PositiveOrNegative (float num1);
+int Power (int num1,int num2);
+int Factorial(int num1);
+void EvenOdd();
+void prime ();
+//global
+int num1=0;
+int num2=0;
+void main()
+{
+int choice;
+cout<<"1-Sum.\n";
+cout<<"2-PositiveOrNegative.\n";
+cout<<"3-Power.\n";
+cout<<"4-Factorial.\n";
+cout<<"5-EvenOdd.\n";
+cout<<"6-Prime.\n";
+cout<<"Choice: ";
+cin>>choice;
+cout<<endl;
+switch(choice)
+{//start switch
+case 1:
+float num3,num4;
+cout<<"Insert Two Numbers: ";
+cin>>num3>>num4;
+cout<<"Summtion: ";
+cout<<sum(num3,num4)<<endl;
+break;
+case 2:
+float numm;
+cout<<"Insert A Number: ";
+cin>>numm;
+PositiveOrNegative(numm);
+break;
+case 3:
+cout<<"Insert Two Numbers: ";
+cin>>num1>>num2;
+cout<<"Power Is: ";
+cout<<Power(num1,num2)<<endl;
+break;
+case 4:
+cout<<"Insert A Number: ";
+cin>>num1;
+cout<<"Factorial: "<<Factorial(num1)<<endl;
+break;
+case 5:
+EvenOdd();
+break;
+case 6:
+prime ();
+break;
+}//end switch
+}//end main
+float sum(float num1,float num2)
+{
+float Summ;
+Summ=num1+num2;
+return Summ;
+}
+void PositiveOrNegative (float num1)
+{
+if(num1<0)
+cout<<"Its Negative\n";
+if (num1==0)
+cout<<"Its zero\n";
+if (num1>1)
+cout<<"Its Postive\n";
+}
+int Power (int num1,int num2)
+{
+float powe;
+if(num1<0)
+num1=num1*-1;
+if (num2<0)
+num2=num2*-1;
+powe=pow(static_cast<float>(num1),num2);
+return static_cast<int>(powe);
+}
+int Factorial(int num1)
+{
+int fac=1;
+if (num1<0)
+num1=num1*-1;
+for (num1;num1>=1;num1--)
+{
+fac=fac*num1;
+}
+return fac;
+}
+void EvenOdd()
+{
+cout<<"To Cancle check even and odd Numbers Insert a Negaitve Number\n\n";
+string a="its a Positive Number.\n";
+int num1;
+cout<<"Insert A Number: ";
+cin>>num1;
+while (num1>=0)
+{
+if(num1%2==0)
+cout<<"Its Even\n";
+else
+cout<<"Its Odd\n";
+cout<<"Insert A Number: ";
+cin>>num1;
+}//end loop
+cout<<a<<endl;
+}
+void prime ()
+{
+int num, cnt=2;
+bool isPrim=true;
+cout<<"insert a number: ";
+cin>>num;
+while(num>0 && cnt<num && isPrim)
+{
+if(num%cnt==0)
+isPrim=false;
+cnt++;
+}
+if(isPrim)
+cout<<num<<" is prime"<<endl;
+else
+cout<<num<<" is NOT prime"<<endl;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Had ElBrnamej Bd5el ElMost5dm 5 number w B6l3 El-Numver El-Zwjyeh wl Number El Frdyeh
+#include<iostream>
+using namespace std ;
+int evenoddNum (int b)
+{
+	int even=0,odd=0;
+if (b%2==0)
+cout<<" The Number Is Even Number ";
+even=b;
+ if (b%2!=0)
+cout<<" The Number Is Odd Number ";
+ odd=b;
+
+return b;
+}
+void main ()
+{
+int a;
+for(int i=0;i<5;i++)
+{
+cout<<"please Enter Number ";
+cin>>a;
+cout<<evenoddNum(a)<<"\n"<<endl;
+}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<string>
+using namespace std ;
+void main ()
+{
+	char answer;
+	string name;
+	int price,count=0;
+		double sum=0;
+cout<<"Welcome To Safeway \n\n";
+cout<<"Do Yo Want To Add More Athems(Y(y),(N(n)): \n";
+cin>>answer;
+while(answer=='y' || answer=='Y')
+{
+cout<<"Enter The Ithem Name : "<<endl;
+cin>>name;
+cout<<"Enter The Price: ";
+cin>>price;
+sum=sum+price;
+count++;
+cout<<"Do Yo Want To Add More Athems(Y(y),(N(n)): \n";
+cin>>answer;
+}
+cout<<"The Resault"<<sum<<endl;
+
+
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std ;
+int Add (int b , int m)
+{
+int x ;
+x=b+m;
+cout<<b<<"+"<<m<<"=";
+return x;
+}
+int Na2e9 (int b , int m)
+{
+int x ;
+x=b-m;
+cout<<b<<"-"<<m<<"=";
+return x;
+}
+int Multiply (int b , int m)
+{
+int x ;
+x=b*m;
+cout<<b<<"*"<<m<<"=";
+return x;
+}
+int Divide (int b , int m)
+{
+int x ;
+x=b/m;
+cout<<b<<"/"<<m<<"=";
+return x;
+}
+void main ()
+{
+int num1,num2;
+char operation;
+cout<<"Enter Number : ";
+cin>>num1;
+cout<<"Enter Number : ";
+cin>>num2;
+cout<<"\n";
+cout<<"Enter Your Operation: ";
+cin>>operation;
+cout<<"\n";
+if(operation=='+')
+cout<<Add(num1,num2)<<endl;
+else if(operation=='-')
+cout<<Na2e9(num1,num2)<<endl;
+ else if (operation=='*')
+cout<<Multiply(num1,num2)<<endl;
+else if (operation=='/')
+cout<<Divide(num1,num2)<<endl;
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+#include<cmath>
+using namespace std ;
+int Mansour(double c)
+{
+cout<<"\n\n";	
+cout<<c<<"^1= "<<pow(c,1)<<endl;
+cout<<c<<"^2= "<<pow(c,2)<<endl;
+cout<<c<<"^3= "<<pow(c,3)<<endl;
+cout<<c<<"^4= "<<pow(c,4)<<endl;
+cout<<c<<"^5= "<<pow(c,5)<<endl;
+cout<<c<<"^6= "<<pow(c,6)<<endl;
+cout<<c<<"^7= "<<pow(c,7)<<endl;
+cout<<c<<"^8= "<<pow(c,8)<<endl;
+cout<<c<<"^9= "<<pow(c,9)<<endl;
+cout<<c<<"^9= ";
+return pow(c,10);
+}
+void main ()
+{
+double a;
+cin>>a;
+cout<<Mansour(a)<<endl;
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q) Write a C++ program which will prompt the user to enter the number of yards as a positive integer value, and then print how many feet and how many inches in this number. [ 20 grades]
+Hint:
+1 yard= 3 feet 1 foot = 12 inches Sample run:
+Enter the number of yards: 10
+10 yards is equivalent to 30 feet
+10 yards is equivalent to 360 inches
+**************************************************************
+answer :
+**********
+# include <iostream>
+# include <string>
+using namespace std;
+void print()
+{
+	cout<<"1- To convert from Yards to feet \n2-to convert from foot to inches\n";
+}
+double fun1(double x)
+{
+	double feet ;
+	feet = x*3;
+
+	return feet;
+}
+double fun2(double x)
+{
+	string a;
+  double inches,feet;
+  cout<<"insert yore answer yards or feet ";
+  cin>>a;
+  cout<<endl;
+   if (a=="yard")
+   {
+	   feet=x*3;
+   inches=feet*12;
+   }
+   else if (a=="feet")
+	   inches=x*12;
+   return inches;
+}
+void main()
+{
+	double yards;
+	cout<<"Enter the number of yards:";
+	cin>>yards;
+	cout<<"\n";
+	cout<<yards<<" yards is equivalent to "<<fun1(yards)<<" feet\n";
+	cout<<yards<<" yards is equivalent to "<<fun2(yards)<<"inches\n";
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void Read(double A[]);
+void showmenue();
+double AVG(double A[]);
+double Findmin(double A[]);
+int Countpass(double A[]);
+void main()
+{
+	double grades[5];
+	cout << "please insert the grades to fill the array ";
+	Read(grades);
+	showmenue();
+	int choice;
+	cout << "\n\nPlease insert your choise: ";
+	cin >> choice;
+	cout << endl;
+	switch (choice)
+	{
+	case 1:
+		cout << "Your Avarege is : " << AVG(grades) << endl;
+		break;
+	case 2:
+		cout << "The Maximum grade is : " << Findmin(grades) << endl;
+		break;
+	case 3:
+		cout<<"The Number of how passed is : " << Countpass(grades) << endl;
+		break;
+	default:
+	cout << "Wrong Choice : " << endl;
+	cout << "\n\nPlease insert your choise: ";
+	cin >> choice;
+	
+	}
+}
+void Read(double A[])
+{
+	for (int i=0;i<5;i++)
+	{
+		cin >> A[i];
+	}
+}
+void showmenue()
+{
+	cout << " \n\n\n  1- Compute the average\n ";
+	cout << " 2- Find the Maximum grade\n ";
+	cout << " 3- Compute how many passed the course\n";
+}
+double AVG(double A[])
+{
+	double sum=0;
+	for (int i=0;i<5;i++)
+	sum+=A[i];
+	return sum/5;
+}
+double Findmin(double A[])
+{
+	double max;
+	max=A[0];
+	for (int i=1;i<5;i++)
+		if (A[i]>max)
+		max=A[i];
+	return max;
+}
+int Countpass(double A[])
+{
+	int counter=0;
+
+	for(int i=0;i<5;i++)
+	if (A[i]>=50)
+	counter++;
+	return counter ;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//«·⁄«„· «·„‘ —ﬂ «·«ﬂ»—
+#include <iostream>
+using namespace std;
+int Divisor(int x,int y)
+{
+int i;
+
+for(i=x;i>0;i--)
+if( x%i==0 && y%i==0 )
+break;
+return i;
+}
+
+int main()
+{
+int a=40,b=50;
+cout<<Divisor(a,b) << endl;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# include <iostream>
+# include <string>
+using namespace std;
+
+void main()
+{
+	int result=0;
+	int x;
+	cout<<"please enter an integer value: ";
+	cin>>x;
+	if (x>0)
+	{
+		if (x%2==0)
+		{
+			for (int i=1; i<=x;i++)
+				result+=i*i;
+				cout<<"\n\nResult= "<<result<<"\n\n";
+		}
+			else
+			{
+				for (int i=1; i<=x ;i++)
+					result+=i*i;
+					cout<<"\nf("<<x<<") = "<<result<<"\n\n";
+			}
+
+	}
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Write a program that uses while loop to perform the following steps:
+a. Prompt the user to input two integers: firstNum and secondNum (firstNum must be less than seconNum)
+b. Output all odd numbers between firstNum and secondNum
+c. Output the sum of all even numbers between firstNum and secondNum
+d. Output the numbers and their square between 1 and 10
+e. Output the sum of the square of the odd numbers between firstNum and secondNum
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num1,num2;
+	int sum2=0,sum1=0;
+	cout<<"Enter two numbers: ";
+	cin>>num1>>num2;
+	cout<<"odd numbers between the 2 numbers: ";
+
+	while(num1<num2)
+	{
+	if (num1%2==1)
+	{
+	cout<<num1<<" ";
+	sum1+=num1*num1;
+	}
+	else sum2++;
+	if (num1>1 && num1<10)
+	cout<<num1<<" "<<num1*num1<<" ";
+
+	num1++;
+
+	}
+	cout<<"sum of all even numbers: "<<sum2<<"\n";
+	cout<<"sum of the square of the odd numbers: "<<sum1<<"\n";
+	return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+“Ê—Ê« „Êﬁ⁄‰« ⁄·Ï «·«‰ —‰ 
+https://sites.google.com/site/rafeaedu/home
+
+“Ê—Ê« ’›Õ ‰« ⁄·Ï «·›Ì” »Êﬂ
+http://www.facebook.com/RafiFheely
+
+«‰÷„Ê« «·«‰ «·Ï ﬁ—Ê» «·„Êﬁ⁄ ⁄·Ï «·›Ì” »Êﬂ
+http://www.facebook.com/groups/rafeaedu/
+
+
+

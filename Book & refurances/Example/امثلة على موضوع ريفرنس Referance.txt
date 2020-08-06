@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+void element(int& x, int& y)
+{
+	x++; // x=x+2; --->> 7 3
+	y--;
+	cout<<x<<" "<<y<<endl;
+
+}
+int main()
+{
+	int x = 5 ,y = 4;
+	element(x,y);
+	cout<<x<<" "<<y<<endl;
+
+	// if write int x --->> 5  3
+	
+}

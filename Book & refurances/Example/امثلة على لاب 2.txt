@@ -1,0 +1,108 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+
+
+	string name,address;
+	cout<<"insert your name :";
+	cin>>name;
+	cout<<"Your name is :  "<<name<<"\n\n";
+	//cin.ignore (200,'\n');
+	cout<<"insert your Address : "; cin>>address;
+	//getline(cin,address);
+	cout<<"Your Address is : "<<address<<"\n\n";
+	
+
+
+return 0;
+}
+
+
+-----------------------------------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+
+
+	int x=4,y=10;
+	//x++;
+	//cout<<x<<endl;
+	int z= x++ + --y * ++x;
+	cout<<x<<endl<<y<<endl<<z<<endl;
+	
+	
+
+
+return 0;
+}
+
+---------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+
+
+	int x=4,y=10;
+	x*=y+10/2;
+	cout<<x<<endl;
+	
+
+return 0;
+}
+
+
+
+---------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+
+
+	int x=4,y=11;
+	//x*=y+10/2;
+	cout<<(x==4 <= y!=11 )<<endl;
+	
+
+return 0;
+}
+
+---------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+
+
+	cout<<"static_cast<int>(3.9)= "
+		<<static_cast<int>(3,9)<<endl;
+
+	cout<<"static_cast<double>(3.9)= "
+		<<static_cast<double>(3,9)<<endl;
+
+	cout<<"static_cast<int>(3.9)= "
+		<<static_cast<double>(7.8 + static_cast<double>(15/2))<<endl<<endl;
+		
+
+
+return 0;
+}
+
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+void main()
+{
+int x=3,y=5;
+(x<=10)? cout<<"A" : (y<=10)? cout<<"B" : cout<<"C";
+
+}
+
+
+
+

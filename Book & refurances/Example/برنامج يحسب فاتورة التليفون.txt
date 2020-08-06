@@ -1,0 +1,66 @@
+Download this file from the site Rafea educational programming C + +
+Example ( calculates the total telephone bill for the customer  )
+made in: Basheer Al Momani
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+Write a C++ program using do-while that takes in the number of units used ('units') as a screen input from the user.
+ It then calculates the total telephone bill for the customer on the following basis :
+ A compulsory fee of $25, plus
+ 60 cents per unit for the first 50 units,
+ 40 cents per unit for the next 150 units,
+ 20 cents per unit for anything above 200 units.
+ It then outputs the bill using the 'cout' command.
+ Sample output
+ Enter the number of units used : 25
+ You have used 25 units.
+ Your total telephone bill is $40
+ Enter the number of units used : 60
+ You have used 60 units.
+ Your total telephone bill is $59
+ Enter the number of units used : 250
+ You have used 250 units.
+ Your total telephone bill is $125
+ Enter the number of units used :0
+ Exit loop
+
+
+
+
+Example ( calculates the total telephone bill for the customer )
+
+--------------------------------------------------------------------------
+
+//calculates the total telephone bill for the customer
+//designed by AL -
+/*MoMaNi*/
+/*mOmAnI*/	
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int i=1;
+	double bill	;
+	do
+	{
+		
+		cout<<"Enter the number of units used (0 for end App): ";
+		cin>>i;
+		if (i==0)
+			break;
+		cout<<"You have used "<<i <<" units.\n";
+		if (i<=50)
+		bill=25+(i*0.6);
+		else if (i<=200)
+		bill=25+(50*0.6)+(i-50)*0.4;
+		else if (i>200)
+		bill=25+(50*0.6)+(150*0.4)+(i-200)*0.2;
+		cout<<"Your total telephone bill is $"<< bill<<endl;
+
+	}
+	while (i);
+	cout<<"Exit loop\n";
+
+	
+
+	return 0;
+}

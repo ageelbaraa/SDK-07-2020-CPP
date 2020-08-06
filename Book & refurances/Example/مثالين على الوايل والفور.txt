@@ -1,0 +1,98 @@
+#include<iostream>
+#include<string>
+using namespace std ;
+int main ()
+{
+char shape;
+string name_shape ;
+cout << "insert the shape type (rectangle , circle or cylinder): ";
+cin >> name_shape ;
+if (name_shape == "rectangle")
+shape = 'r';
+else if (name_shape == "circle")
+shape = 'c';
+else if(name_shape == "cylinder")
+shape = 'y';
+else
+cout<<"illegal sape type\n";
+
+switch (shape)
+{
+case 'r' :
+
+int a,b ,rectangle_perimeter ,rectangle_area;
+cout<<"insert rectangle width and length: ";
+cin>>a>>b;
+rectangle_area = a*b;
+cout<<"rectangle area= "<<rectangle_area<<endl;
+rectangle_perimeter = 2*(a+b);
+cout<<"rectangle perimeter= "<<rectangle_perimeter<<endl;
+break;
+
+case 'c' :
+
+float c,circle_area,circumfence;
+cout<<"insert circle radius: ";
+cin>>c;
+circle_area = 3.14 * c * c;
+cout<<"circle area= "<<circle_area<<endl;;
+circumfence = 2* 3.14 * c;
+cout<<"rectangle circumfence= "<<circumfence<<endl;
+break;
+
+case 'y' :
+
+float d , s,volume,base_area,surface_circumfence,base_circumfence;
+cout<<"insert base radius: ";
+cin>>d;
+base_area= 3.14 * d *d;
+
+cout<<"insert cylinder highets= ";
+cin>>s;
+volume = base_area * s ;
+base_circumfence= 2*3.14*d;
+surface_circumfence = (base_area *2)+ (base_circumfence * s);
+cout<<"cylinder volume= "<<volume<<endl;
+cout<<"\nsurface_circumfence= "<<surface_circumfence<<endl;
+break;
+
+}
+
+return 0 ;
+}
+--------------------------------------------------------
+#include <iostream>
+using namespace std ;
+void main()
+{
+int a ,b, sum=0 ;
+cin>>a;
+while ( a>0)
+{
+b = a % 10 ;
+
+a= a/10;
+
+cout <<b;
+}
+
+
+}
+--------------------------------------------------------
+#include <iostream>
+using namespace std ;
+void main()
+{
+cout << "Please enter a number: ";
+int y;
+cin >> y;
+cout << endl;
+
+int x, z;
+
+for (x = y; x > 0; x /= 10){
+z = x % 10;
+cout << z;
+}
+cout << endl;
+}

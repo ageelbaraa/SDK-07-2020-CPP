@@ -1,0 +1,33 @@
+
+#include <iostream>
+using namespace std ;
+int main()
+{
+
+cout<<"First Shape"<<endl;
+for(int n=1;n<=4;n++)
+{
+for(int j=1;j<=4;j++)
+{
+if(n<=j)
+cout<<"* ";
+}
+cout<<endl;
+}
+
+cout<<endl;
+
+cout<<"Second Shape"<<endl;
+int i,row,space;
+for(row=4; row >= 0; row--)
+{
+
+for(space=row; space < 4; space++)
+cout<<" "<<" ";
+for(i = row; i > 0 ; i--)
+cout<<" "<<"*";
+cout<<endl;
+
+}
+return 0;
+}

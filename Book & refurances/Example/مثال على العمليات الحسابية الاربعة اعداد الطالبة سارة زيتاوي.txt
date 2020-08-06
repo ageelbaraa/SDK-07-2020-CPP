@@ -1,0 +1,148 @@
+Download this file from the site Rafea educational programming C + +
+Example ( Calculations  )
+made in: Sarah Zetawi
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( Calculations )
+
+--------------------------------------------------------------------------
+
+
+
+Using a do while loop that prompts the user to enter 2 numbers then display a menu to the user and wait for the user to make a valid choice then print the expression..
+Sample Run:
+
+First Number : 5
+Second Number : 5
+
+Please make a selection:
+1) Addition
+2) Subtraction
+3) Multiplication
+4) Division
+
+6
+
+Please make a selection:
+1) Addition
+2) Subtraction
+3) Multiplication
+4) Division
+
+1
+5+5=10
+
+------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+
+int num1,num2;
+int x;
+
+cout<<"plz enter two numbers : ";
+cin>>num1>>num2;
+
+cout<<"Please make a selection: \n";
+cout<<"Enter 1 for Addition \n";
+cout<<"Enter 2 for Subtraction \n";
+cout<<"Enter 3 for Multiplication \n";
+cout<<"Enter 4 for Division\n";
+cin>>x;
+do
+{
+
+switch (x)
+{
+case 1:cout<<num1<<"+"<<num2<<"="<<num1+num2<<"\n";
+break;
+case 2:cout<<num1<<"-"<<num2<<"="<<num1-num2<<"\n";
+break;
+case 3:cout<<num1<<"*"<<num2<<"="<<num1*num2<<"\n";
+break;
+case 4:cout<<num1<<"/"<<num2<<"="<<num1/num2<<"\n";
+break;
+default:cout<<"Please make a selection: \n";
+cout<<"Enter 1 for Addition \n";
+cout<<"Enter 2 for Subtraction \n";
+cout<<"Enter 3 for Multiplication \n";
+cout<<"Enter 4 for Division\n";
+
+}
+
+if(x>=1 && x<=4)
+break;
+cin>>x;
+}
+while(x>=1&&x<=4);
+}
+------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+
+
+
+int nSelection;
+int firstNum;
+int secNum;
+int result;
+
+cout<<"First Number : ";
+cin>>firstNum;
+cout<<endl;
+
+cout<<"Second Number : ";
+cin>>secNum;
+cout<<endl;
+
+
+do
+{
+cout << "Please make a selection: " << endl;
+cout << "1) Addition" << endl;
+cout << "2) Subtraction" << endl;
+cout << "3) Multiplication" << endl;
+cout << "4) Division" << endl;
+cin >> nSelection;
+} while (nSelection != 1 && nSelection != 2 &&
+nSelection != 3 && nSelection != 4);
+
+
+switch ( nSelection ) {
+
+case 1 :
+{
+result=firstNum+secNum;
+cout<<firstNum<<"+"<<secNum<<"="<<result<<endl;
+}
+break;
+
+case 2 :
+{
+result=firstNum-secNum;
+cout<<firstNum<<"-"<<secNum<<"="<<result<<endl;
+}
+break;
+
+case 3 :
+{
+result=firstNum*secNum;
+cout<<firstNum<<"*"<<secNum<<"="<<result<<endl;
+}
+break;
+
+case 4 :
+{
+result=firstNum/secNum;
+cout<<firstNum<<"/"<<secNum<<"="<<result<<endl;
+}
+break;
+
+}
+
+return 0;
+}

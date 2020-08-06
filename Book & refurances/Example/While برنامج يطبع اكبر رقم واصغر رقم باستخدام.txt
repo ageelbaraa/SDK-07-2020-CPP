@@ -1,0 +1,35 @@
+Download this file from the site Rafea educational programming C + +
+Example ( print the Largest Number & Smaller Number )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( print the Largest Number & Smaller Number we use = While & if )
+
+-----------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number,counter;
+int max,min;
+counter = 1;
+
+cout << "Enter your numbers: " << endl;
+cin >>number;
+max = min =number; //at the first number eqaual max and min.
+while(counter<4)
+{
+cin>>number;
+if(min>number)
+min=number;
+else if(max<number)
+max=number;
+counter++;
+}
+cout<<"The Largest number is " << max << endl;
+cout<<"The lowest number is " << min << endl;
+
+}

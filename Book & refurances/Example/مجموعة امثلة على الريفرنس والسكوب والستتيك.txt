@@ -1,0 +1,167 @@
+// calling by Raferance
+#include <iostream>
+using namespace std;
+void Num(int &x , int &y , int z ) // calling by Raferance
+{
+	x++;
+	y++;
+	z++;
+	cout << x << "  " << y << "  " << z << endl ;
+
+}
+int main()
+{
+	int x=2,y=3,z=4;
+	Num(x,y,z);
+	cout<< "x+5 = " << x+5 << endl; // calling by Raferance
+	cout<< "y+5 = " << y+5 << endl;   // calling by Raferance
+	cout<< "z+5 = " << z+5 << endl; // calling by Raferance
+}
+---------------------------------------------------------------------
+#include <iostream>
+#using namespace std;
+void Num(int x , int y )
+{
+	//cout << x << "  " << y << endl << endl ;
+	cout<< "____________________________\n\n";
+	return ;
+}
+int z=9,r=0;  // Globle
+void main()
+{
+	int x=1,y=2;
+	cout << x << "  " << y << endl ;
+
+	
+	Num(x,y);
+	cout<< "    Globle is \n" ;
+	cout<< endl << ::z << endl; // Globle
+	::z=z+1;   // Globle
+	cout<< ::z << endl;   // Globle
+	
+	cout<< "\n    Scope is \n";
+	{
+		int x=100;
+		cout<< x << endl;
+	}
+		{
+			cout<< x << endl;
+		}
+		cout<< y << endl;
+			{
+				double y=3.8;
+				cout<< y << endl;
+			}
+
+}
+---------------------------------------------------------------------
+// Scope
+#include <iostream>
+using namespace std;
+int x = 3 ; // Globle x is All Program
+int w = 2.3; // Globle w is All Program
+// Desgin Scope : Rafea Fheely
+void main()
+{
+		int y = 0;
+		cout << y << endl;
+		
+		{	int x = 9;
+			cout << x << endl;	}
+		
+		{	cout << x ;	}
+		
+			
+		{	cout << "\nGloble ::x = " << ::x ;	} // 3
+			
+			
+			{	
+				int q = 1; 
+				cout << endl << q+1 << endl;
+				cout << q << endl;	
+			}
+
+		// Exit The Scope { }
+
+			cout << x << endl;
+			cout << "Globle ::w = " << ::w << endl ;
+			cout << "Desgin Scope: Rafea Fheely " << endl; 
+
+}
+---------------------------------------------------------------------
+// Scope
+#include <iostream>
+using namespace std;
+void main()
+{
+		int y=0;
+
+		{
+			int x=9;
+			cout<<x;
+		{
+			cout<<endl<<y;
+		}
+			{
+				cout<<"\n@@@@@@@\n";
+			}
+			{
+				int x=1;
+				cout<<endl<<x+1<<endl;
+			}
+
+
+	}
+}
+---------------------------------------------------------------------
+// static parameter
+#include <iostream>
+using namespace std;
+// Desgin static: Rafea Fheely
+void fun()
+{
+	
+	static int x = 4;
+	int y = 20;
+	x = x + 2; // 6
+	y = x + y; // 26  because 6 + 20 = 26
+
+	cout << x << "   " << y << endl;
+
+	// int x = 4;
+	// static int y = 20;
+
+	/* static int y = 20;
+	ÇÐÇ ßÇäÊ ÇíÖÇ ÇáæÇí ÓÊÊíß
+	ÝÇä ÞíãÉ ÇáÇßÓ ßá ãÑÉ ÊÒíÏ
+	ÇËäíä æáßä ÇáæÇí ÊÃÎÐ ÞíãÉ
+	ÇáÇßÓ ÇáäåÇÆíÉ ãËáÇ 26  6 ßíÝ
+	.... ÊÍÓÈ¿ äÞæá 26 + 6 = 34 
+	æåßÐÇ .....
+	*/
+}
+void main()
+{
+	fun(); // 6  26
+	fun(); // 8  28
+	fun(); // 10  30
+	fun(); // 12  32
+}
+---------------------------------------------------------------------
+// static parameter
+#include <iostream>
+using namespace std;
+void fun(int x)
+{
+	
+	static int z = 0;
+	z = z + x;
+	cout << z << endl;
+
+}
+void main()
+{
+	for (int i=3 ; i<5 ; i++)
+		fun(i);
+		cout << "\nDesgin static : Rafea Fheely" << endl;
+}

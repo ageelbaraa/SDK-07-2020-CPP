@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int i,j;
+	for (i=6;i<3;i++)
+	{
+		break;
+		cout<<i;
+		cout<<"hi";
+	}
+	cout<<"One\n\n";
+
+		for (j=0;j<5;j++)
+		{
+			cout<<j;
+			cout<<"OK\n";
+		}
+		cout<<"\n\n"<<"two\n\n";
+	
+			for (int x=2;x>3;x++)
+				{
+					cout<<x;
+					cout<<"Yes";
+				}cout<<"Three\n\n";
+
+			for (int w=0;w<10;w++)
+			{
+					cout<<w;
+					cout<<"NO";
+			}
+			cout<<"Four\n\n\n\n";
+
+		int y,r;
+		cout<<" "<<"enter the number\n";
+		cin>>y>>r;
+
+		if (y<r)
+		{
+			cout<<"this y less r\n";
+			cout<<"Lat's Good ia Rafea";
+		}
+		else if (y>=r)
+			cout<<"Thank you Rafea\n";
+		else if (y=r)
+		{
+			cout<<r<<endl;
+			cout<<"Thank you";
+		}
+
+		int W;
+		switch (W)
+		{
+		case 'A':cout<<"your is grade A";break;
+		case 'b':
+			cout<<"your is grade b";
+				break;
+
+		case 'D':cout<<"your is grade D";
+			break;
+		}
+
+
+	return 0;
+}

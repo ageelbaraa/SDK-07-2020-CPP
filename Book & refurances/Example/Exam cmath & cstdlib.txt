@@ -1,0 +1,60 @@
+#include <iostream>
+//#include <cstdlib>
+using namespace std ;
+int main()
+{
+
+	cout<<abs(-5.3);
+
+	return 0;
+}
+
+---------------------------------------
+#include <iostream>
+//#include <cstdlib>
+#include <cmath> // take double
+using namespace std ;
+int main()
+{
+
+	cout<<abs(-5.3); // 5.3
+
+	return 0;
+}
+
+---------------------------------------
+#include <iostream>
+//#include <cstdlib>
+#include <cmath> // take double
+using namespace std ;
+int main()
+{
+// fabs =  // #include <cmath>
+
+	cout<<abs(-5)<<endl; 
+// if write fabs = 5.3
+// if write fabs(-1) = Erorre
+
+	return 0;
+}
+
+
+
+
+
+
+
+------------------------------------------
+#include <iostream>
+#include <cmath> // take double
+using namespace std ;
+int main()
+{
+
+
+	cout<<ceil(18.1)<<endl; // if erite ceil(18) = erorre
+
+
+
+	return 0;
+}

@@ -1,0 +1,130 @@
+//ãÕİæİÉ ÍÌãåÇ 50 ÚäÕÑ æäÑíÏ ÇÏÎÇá ÈÚÖ ÚäÇÕÑåÇ Çæ ßáåÇ Ëã äØÈÚ ÚäÇÕÑ ÇáãÕİæİÉ æÇßÈÑ ŞíãÉ ÈíäåÇ
+#include <iostream>
+using namespace std;
+int max(int x,int y)
+{
+	if(x>y)
+		return x;
+	else 
+		return y;
+}
+int main()
+{
+	int A[50],n,max_value,i;
+	cout << "Enter number of elements : ";
+	cin >> n;
+
+	for(i=0;i<n;i++)
+	{
+		cout << "Enter the element " << i+1 << " : ";
+		cin >> A[i];
+	}
+	max_value=A[0];
+
+	for(i=1;i<n;i++)
+		max_value=max(max_value,A[i]);
+		cout << "\nThe array is : ";
+
+		for(i=1;i<n;i++)
+			cout << A[i] << "  ";
+			cout << "\nThe largest number is: " << max_value << "\n\n";
+
+	return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+//ÈÑäÇãÌ íŞÑÃ ãÕİæİÉ ãä ÎãÓ ÇÚÏÇÏ æíØÈÚ ÚÏÏ ÇáÇÚÏÇÏ ÇáãæÌÈÉ æÇáÓÇáÈÉ æÚÏÏ ÇáÇÕİÇÑ
+#include <iostream>
+using namespace std;
+void main()
+{
+
+	int matrix[5],i,Negative=0,Positive=0,Zero=0;
+
+	for (i=0;i<5;i++)
+		cin >> matrix[i];
+
+	for (i=0;i<5;i++)
+	{
+		if ( matrix[i] > 0 )
+			Positive++;
+		else if ( matrix[i] < 0 )
+			Negative++;
+		else
+			Zero++;
+	}
+
+	cout << " The Positive Number : " << Positive << endl;
+	cout << " The Negative Number : " << Negative << endl;
+	cout << " The Zero's   Number : " << Zero << endl;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+//ÊÑÊíÈ ÚäÇÕÑ ãÕİæİÉ ÊÑÊíÈÇ ÊÕÇÚÏíÇ
+#include <iostream>
+using namespace std;
+void main()
+{
+	const int n=5;
+	int l,i,j,k,temp,arr[n];
+
+		for(i=0;i<n;i++)
+		cin>>arr[i];
+
+			for(i=0;i<n;i++)
+			{
+				temp=100;
+					for(j=i;j<n;j++)
+						if(temp>arr[j])
+						{
+							temp=arr[j];
+							k=j;
+						}
+						arr[k]=arr[i];
+						arr[i]=temp;
+
+					for(l=0;l<n;l++)
+						cout<<" "<<arr[l];
+						cout<<endl;
+			}
+			cout<<"\n\nThe array after sorting : ";
+			for(i=0;i<n;i++)cout<<" "<<arr[i];
+			cout << "\n\nDesgin: Rafea Fheely\n\n";
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+//ãËÇá ÇÈÊÏÇÆí Úáì ÇáãÕİæİÇÊ
+#include <iostream>
+using namespace std;
+void main()
+{
+	int a[4];
+	int i,j;
+
+	for(i=0;i<4;i++)
+	{
+		cin >> a[i];
+	}
+	for(i=0;i<4;i++)
+	{
+		cout << a[i];
+	}
+	cout << endl;
+	for(j=0;j<4;j++)
+	{
+		cin >> a[j];
+		a[j]++;
+		cout << a[j];
+		//cout << a[3];
+	}
+	cout << endl;
+	for(j=1;j<3;j++)
+	{
+		cout << "Rafea Fheely\n";
+	}
+	for(j=0;j<i;j++)
+	{
+		cin >> a[j];
+	}
+	cout << "Good by\n";
+}
+
+
+

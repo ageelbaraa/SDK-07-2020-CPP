@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+		int y=0;
+
+		{
+			int x=9;
+			cout<<x;
+		{
+			cout<<endl<<y;
+		}
+			{
+				cout<<"\nwwwww\n";
+			}
+			{
+				int x=1;
+				cout<<endl<<x+1<<endl;
+			}
+
+
+	}
+}

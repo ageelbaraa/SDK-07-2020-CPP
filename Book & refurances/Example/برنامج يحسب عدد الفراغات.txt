@@ -1,0 +1,31 @@
+Write program that allows user to type up to 50 characters (). If the user hits enter, the loop terminate early.
+print how many spaces the user has entered.
+
+
+------------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+// count how many spaces the user has entered
+char ch;
+int count=1,spaces;
+
+while(count<=50)
+{
+cout<<"plz enter a character: ";
+cin>>ch;
+if(ch=='\n')
+break;
+if (ch==' ')
+spaces++;
+
+count++;
+}
+cout<<"The number of spaces are: "<<spaces<<"\n";
+
+return 0;
+}

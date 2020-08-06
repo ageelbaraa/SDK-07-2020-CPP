@@ -1,0 +1,333 @@
+Download this file from the site Rafea educational programming C + +
+Example ( if & switch & case )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( if )
+
+*********************************************************************************************
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int num;
+	cout<<"enter a number :";
+	cin>> num;
+	{
+	if (num % 2 == 0 )
+		cout<<"the number:"<<num<<" "<<"is even:"<<endl;
+
+	else if (num % 2! =0 )
+		cout<<"the number:"<<num<<" "<<"is odd:"<<endl;
+	}
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+
+	int a=10,b=5;
+		if(a>b)//the output first statment Ìÿ»⁄ Ã„·… «·‘—ÿ «·«Ê·Ï
+		{
+		cout<<"My First use C++ Program"<< endl;
+		cout<<"Student Name:"<<"rafea ali"<<endl;
+		cout<<"Student number:"<<"61"<<endl;
+		}
+		else if (a>=b)
+			cout<<"www.rafea.edu.com\n"<<endl; 
+		else if (a!=b)
+			cout<<"rafea ali\n"<<endl;
+
+/* making your program is students: Rafea ali fheely
+is more details please visit website ... https://sites.google.com/site/rafeaedu  */
+
+	return 0;
+}
+-------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int num1,num2,num3,num4,num5,Largest;
+	cout<<"enter five integer :";
+	cin>> num1,num2,num3,num4,num5;
+	
+	if (num1>num2 && num1>num3 && num1>num5 )
+		Largest= num1;
+	
+
+		else if (num2>num3 && num2>num4 && num2>num5 )
+		Largest= num2;
+
+
+	return 0;
+}
+-------------------------------------------------
+
+
+
+
+
+
+
+Example ( switch )
+
+*********************************************************************************************
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int num;
+	cout<<"enter a number :";
+	cin>> num;
+	switch (num)
+	{
+		case 1:cout<<"output 1\n";break;
+		case 2:cout<<"output 2\n";break;
+		case 3:cout<<"output 3\n";break;
+		case 4:
+		case 5:cout<<"output 5\n";break;
+	
+		default:
+				cout<<"output not\n";
+	}
+	
+
+	return 0;
+}
+-------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x;
+	cout<<"Enter month:";
+	cin>>x;
+
+	switch (x)
+	{
+		case 1:cout<<"month is a fall Summer\n";break;
+		case 2:cout<<"month is a fall Summer\n";break;
+		case 3:cout<<"month is a fall Summer\n";break;
+			
+		case 4:cout<<"month is a fall Spring\n";break;
+		case 5:cout<<"month is a fall Spring\n";break;
+		case 6:cout<<"month is a fall Spring\n";break;
+
+		case 7:cout<<"month is a fall Cold\n";break;
+		case 8:cout<<"month is a fall Cold\n";break;
+		case 9:cout<<"month is a fall Cold\n";break;
+		case 10:cout<<"month is a fall Cold\n";break;
+		case 11:cout<<"month is a fall Cold\n";break;
+		case 12:cout<<"month is a fall Cold\n";break;
+	}
+
+	return 0;
+}
+-------------------------------------------------
+#include <iostream>
+ using namespace std;
+int main()
+{
+char grade; cout << "Enter your grade: "; cin >> grade; cout << endl;
+switch (grade)
+	{	
+	case 'A'://ENTER A print ok
+		break;
+	case 'B':
+		cout << "Your grade is A." << endl;
+		break;
+	
+		cout << "Your grade is B." << endl;
+		break;
+	case 'C':
+  		cout << "Your grade is C." << endl;
+		break;
+	case 'F': 
+               case 'f':
+  		cout << "Your grade is C." << endl;
+		break;
+	default:
+		cout<<" The grade is invalid."<<endl;
+	}
+cout<<"ok";
+return 0;
+}
+-------------------------------------------------
+#include <iostream>
+ using namespace std;
+int main()
+{
+char grade; cout << "Enter your grade: "; cin >> grade; cout << endl;
+switch (grade)
+	{	
+	case 'A':
+		cout << "Your grade is A." << endl;
+		break;
+	case 'B':
+		cout << "Your grade is B." << endl;
+		break;
+	case 'C':
+  		cout << "Your grade is C." << endl;
+		break;
+	case 'F': 
+               case 'f':
+  		cout << "Your grade is C." << endl;
+		break;
+	default://ENTER a print The grade is invalid.
+		cout<<" The grade is invalid."<<endl;
+	}
+cout<<"ok";
+return 0;
+}
+-------------------------------------------------
+#include <iostream>
+ using namespace std;
+int main()
+{
+int grade; cout << "Enter your grade: "; cin >> grade; cout << endl;
+switch (grade)
+	{
+	case static_cast<int>('A')://enter 65 print 65 and ok
+	cout<<"65"<<endl;
+	break;
+
+
+	case '30':
+		cout << "Your grade is B." << endl;
+		break;
+	case '60':
+  		cout << "Your grade is C." << endl;
+		break;
+	case '90': 
+               case 'f':
+  		cout << "Your grade is C." << endl;
+		break;
+	
+	}
+cout<<"ok";
+return 0;
+}
+-------------------------------------------------
+#include <iostream>
+ using namespace std;
+int main()
+{
+int grade; cout << "Enter your grade: "; cin >> grade; cout << endl;
+switch (grade)
+	{
+	case grade>90;//error
+	cout<<"65"<<endl;
+	break;
+
+
+	case '30':
+		cout << "Your grade is B." << endl;
+		break;
+	case '60':
+  		cout << "Your grade is C." << endl;
+		break;
+	case '90': 
+               case 'f':
+  		cout << "Your grade is C." << endl;
+		break;
+	
+	}
+cout<<"ok";
+return 0;
+}
+-------------------------------------------------
+#include <iostream>
+ using namespace std;
+int main()
+{
+int grade; cout << "Enter your grade: "; cin >> grade; cout << endl;
+switch (grade)
+	{
+case 100://error
+	cout<<65+30<<endl;
+	cout<<65+30<<endl;
+	break;
+
+	case '30':
+		cout << "Your grade is B." << endl;
+		break;
+	case '60':
+  		cout << "Your grade is C." << endl;
+		break;
+	case '90': 
+               case 'f':
+  		cout << "Your grade is C." << endl;
+		break;
+	
+	}
+cout<<"ok";
+return 0;
+}
+-------------------------------------------------
+#include <iostream>
+ using namespace std;
+int main()
+{
+	int age=50;
+
+	switch (age>21)
+	{
+
+
+
+	case true:cout<<"Rafea\n";break;
+	case false:cout<<"Ali\n";break;
+	
+
+	default:cout<<"By\n";
+					
+	}
+
+return 0;
+}
+-------------------------------------------------
+#include <iostream>
+using namespace std;
+void main ()
+{
+
+	int x=3;
+	switch (x+3)//(x!=7) (x==7)
+	{
+
+	case 3:cout<<"A";break;
+	case 5:
+	case 7:cout<<"B";break;
+		case 6:cout<<"W";break;
+	case 9:cout<<"C";break;
+	default:cout<<"D";break;
+
+	}
+}
+-------------------------------------------------
+#include <iostream>
+using namespace std;
+int main ()
+{
+
+	int i=1;
+	switch (i)//(x!=7) (x==7)
+	{
+
+	case '-2':cout<<"-2";break;
+	case '-1':cout<<"-2";break;
+	case '0':cout<<"-2";break;
+	case '1':cout<<"-2";break;
+	case '2':cout<<"-2";break;
+		default:cout<< 'i';
+
+	}
+	return 0;
+}

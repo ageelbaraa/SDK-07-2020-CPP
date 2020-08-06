@@ -1,0 +1,27 @@
+Download this file from the site Rafea educational programming C + +
+Example ( Code print ch )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example (Code print ch)
+
+-----------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	char ch='a';
+	do
+	{
+		ch++;
+		cout<<ch<<' ';
+		
+	}
+	while ( ch <= 'z' );
+
+	return 0;
+}

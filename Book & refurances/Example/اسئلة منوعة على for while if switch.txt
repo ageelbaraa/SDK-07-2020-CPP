@@ -1,0 +1,1110 @@
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· —ﬁ„ ›ÌﬁÊ„ »ÿ»«⁄… „Ÿ—Ê» Â–« «·⁄œœ..
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+„À«·:
+1*3*3*4*5=5
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number;
+cout<<"please enter number: ";
+cin>>number;
+cout<<number<<"=";
+while(number>0)
+{
+cout<<number;
+number--;
+if(number!=0)
+cout<<"*";
+}
+cout<<endl;
+
+return 0;
+}
+--------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· —ﬁ„ ›ÌﬁÊ„ »ÿ»«⁄… Ã„Ì⁄ «·√—ﬁ«„ „‰ Â–« «·’›— ≈·Ï Â–« «·—ﬁ„..
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+„À«·:
+please insert a number: 10
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+.......press any key to Continue
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number;
+int x=0;
+cout<<"please insert a number: ";
+cin>>number;
+
+while(x<=number)
+{
+cout<<"------------"<<endl;
+cout<<x<<endl;
+x=x+1;
+if(x>number)
+cout<<endl;
+}
+
+;return 0;
+}
+--------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· —ﬁ„ ›ÌﬁÊ„ »ÿ»«⁄… Ã„Ì⁄ «·√—ﬁ«„ „‰ Â–« «·⁄œœ ≈·Ï «·’›—. «·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+„À«· «·„Œ—Ã«   ŸÂ— ﬂ«· «·Ì ..
+5 :please insert a number
+5
+4
+3
+2
+1
+0
+.......press any key to Continue
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number;
+int x=-1;
+int sum=1;
+cout<<"please insert a number: "<<endl;
+cin>>number;
+
+while(x<number)
+{
+sum=sum*number;
+cout<<number;
+number--;
+cout<<endl;
+}
+return 0;
+}
+--------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· —ﬁ„ ›ÌﬁÊ„ »ÿ»«⁄Â «–« ﬂ«‰ Â–« «·—ﬁ„ “ÊÃÌ «Ê ›—œÌ...
+„À«·:
+5 this number is odd
+4 this number is even
+
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+«·ﬂÊœ:
+
+<include<iostream#
+;using namespace std
+()int main
+}
+;int number
+;":cout<<"please enter number
+;cin>>number
+(if(number%2==0
+;cout<<"This number is even"<<endl
+else
+;cout<<"This number is odd"<<endl
+;return 0
+{
+--------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· ⁄·«„Â «·ÿ«·» ›ÌﬁÊ„ »ÿ»«⁄…  ﬁœÌ— «·⁄·«„Â..
+„À«·:
+90 Ê«ﬂ»— =A
+80 Ê«ﬂ»— =B
+70 Ê«ﬂ»— =C
+60 Ê«ﬂ»— =D
+50 Ê«ﬂ»— =E
+49 Ê«’€— =FAIL
+
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+«·ﬂÊœ:
+
+<include<iostream#
+;using namespace std
+()int main
+}
+;double grade
+;":cout<<"please enter student grade
+;cin>>grade
+(if(grade>=90
+;cout<<"A"<<endl
+(else if(grade>=80
+;cout<<"B"<<endl
+(else if(grade>=70
+;cout<<"C"<<endl
+(else if(grade>=60
+;cout<<"D"<<endl
+(else if(grade>=50
+;cout<<"E"<<endl
+else
+;cout<<"FAIL"<<endl
+;return 0
+{
+--------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· 3 «ÊÃÂ ·’‰œÊﬁ ›ÌﬁÊ„ »ÿ»«⁄… ÕÃ„ Â–« «·’‰œÊﬁ..
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int length;
+int width;
+int height;
+int volume;
+cout<<"please enter length: ";
+cin>>length;
+cout<<"please enter width: ";
+cin>>width;
+cout<<"please enter heigth: ";
+cin>>height;
+volume=length*width*height;
+if(volume<0)
+cout<<"illegel input"<<endl;
+else
+cout<<"the volume is: "<<volume<<endl;
+
+return 0;
+}
+--------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· 4 «—ﬁ«„ ›ÌﬁÊ„ »ÿ»«⁄… „ﬁ·Ê» «·«—ﬁ«„ «·„œŒ·Â
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting....
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number;
+int num1;
+int num2;
+int num3;
+int num4;
+cout<<"enter four number: ";
+cin>>number;
+num1=(number%10);
+num2=(number%100)/10;
+num3=(number%1000)/100;
+num4=(number%10000)/1000;
+cout<<"THe reverse numbers is:";
+cout<<num1<<num2<<num3<<num4<<endl;
+return 0;
+}
+
+-----------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· ⁄·«„Â «·ÿ«·» ›ÌﬁÊ„ »ÿ»«⁄…  ﬁœÌ— «·⁄·«„Â..
+„À«·:
+90 Ê«ﬂ»— =A
+80 Ê«ﬂ»— =B
+70 Ê«ﬂ»— =C
+60 Ê«ﬂ»— =D
+50 Ê«ﬂ»— =E
+49 Ê«’€— =FAIL
+
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+double grade;
+cout<<"please enter student grade: ";
+cin>>grade;
+if(grade>=90)
+cout<<"A"<<endl;
+else if(grade>=80)
+cout<<"B"<<endl;
+else if(grade>=70)
+cout<<"C"<<endl;
+else if(grade>=60)
+cout<<"D"<<endl;
+else if(grade>=50)
+cout<<"E"<<endl;
+else
+cout<<"FAIL"<<endl;
+return 0;
+}
+
+------------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã  œŒ· 3 «—ﬁ«„ ›ÌﬁÊ„ »ÿ»«⁄… «·«—ﬁ«„ «·„œŒ·Â Êÿ»«⁄Â «’€—Â«..
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+Because cheting
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number1;
+int number2;
+int number3;
+cout<<"please enter first number: ";
+cin>>number1;
+cout<<"please enter secund number: ";
+cin>>number2;
+cout<<"please enter last number: ";
+cin>>number3;
+cout<<"The numbers is: "<<endl;
+cout<<number1<<endl;
+cout<<number2<<endl;
+cout<<number3<<endl;
+if(number1<number2&&number1<number3)
+cout<<"The minimum number is: "<<number1<<endl;
+else if(number2<number1&&number2<number3)
+cout<<"The minimum number is: "<<number2<<endl;
+else if(number3<number1&&number3<number2)
+cout<<"The minimum number is:"<<number3<<endl;
+
+return 0;
+}
+---------------------------------------------------------------
+Â–« «·ﬂÊœ ·»—‰«„Ã Ìÿ»⁄ «·⁄œœ «·„ÊÃ» ÊÌŒ»—‰« »–·ﬂ Ê⁄‰œ «œŒ«· —ﬁ„ ”«·» Ì»ﬁÏ «·»—‰«„Ã Ìÿ·» „‰ «·„” Œœ„ «œŒ«· —ﬁ„ „ÊÃ»....
+«·—Ã«¡  €ÌÌ— «·„ €Ì—«  ..
+
+Because cheting
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number;
+int y=0;
+cout<<"enter positive number: ";
+cin>>number;
+if(y<number)
+cout<<number<<":"<<"THis positive number"<<endl;
+if(y>number)
+cout<<number<<":"<<"THis not positive number"<<endl;
+while(y>number)
+{
+cin>>number;
+cout<<"please enter positive number"<<endl;
+if(y<number)
+cout<<number<<":"<<"THis positive number"<<endl;
+}
+return 0;
+}
+
+-------------------------------------------------------------------
+«ﬂ » C + + «·»—‰«„Ã «·–Ì „ÿ«·»… «·„” Œœ„ ≈œ—«Ã ·≈œ—«Ã 50 —ﬁ„ ⁄œœ ’ÕÌÕ À„ ”Ì „ «Œ »«— «·»—‰«„Ã Êÿ»«⁄… «·√—ﬁ«„ «·≈ÌÃ«»Ì… Ê«·”·»Ì…. ( Õ «Ã ≈·Ï «” Œœ«„ ·Õ·ﬁ… Ê≈–« ﬂ«‰   ’—ÌÕ«  „‘—Êÿ….)
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+
+	int num;
+
+for(int i=1; i<=50 ;i++)
+{
+cout<<"plz enter an integer : ";
+cin>>num;
+if(num>0)
+cout<<num <<" : is positive number.\n\n ";
+else
+cout<<num <<" : is negative number.\n\n ";
+
+}
+
+}
+-----------------------------------------------------------------------
+»—‰«„Ã ÌÕ”» ⁄œœ Œ«‰«  «·Ã„·… «· Ì ” œŒ·Â«
+ﬂ «»… »—‰«„Ã ·ﬁ»Ê· ”·”·… „‰ «·√Õ—› „‰ „” Œœ„. ⁄‰œ„« Ì‰ﬁ— «·„” Œœ„ ⁄·Ï «·⁄Êœ… (œŒÊ· ⁄·Ï ·ÊÕ… «·„›« ÌÕ)° Ì Êﬁ› «·»—‰«„Ã ⁄‰ ﬁ»Ê· «·√Õ—› ÊÌ⁄—÷ ⁄œœ «·√Õ—› ﬁ«„ «·„” Œœ„ »≈œŒ«·
+
+«·ﬂÊœ:
+#include <iostream>
+#include <string>
+using namespace std;
+int main () {
+string str;
+cout << "Please enter full name: ";
+getline (cin,str);
+cout << "Thank you, " << str << ".\n";
+
+int num =str.length(); //length function
+cout <<"length = " << num;
+
+return 0;
+}
+
+------------------------------------------------------------------------
+»—‰«„Ã «„ Õ«‰ «·ﬂ —Ê‰Ì
+ﬂ «»… »—‰«„Ã «· Ì  ”„Õ ··„” Œœ„ ·≈œŒ«· «·≈Ã«»«  ⁄‰ ”ƒ«· «Œ Ì«— Ì ﬂÊ‰ „‰ 5 √”∆·… «·«Œ Ì«— „⁄ 1 ›Ì ﬂ· ”ƒ«·. ”Ê›  ﬂÊ‰ «·≈Ã«»… ≈„« ’ÕÌÕ… √Ê Œ«ÿ∆….
+ Õﬁﬁ ≈Ã«»«  Œ«ÿ∆… ⁄‰ ﬂ· «·√”∆·… Ê«·≈Œ—«Ã "Â–Â «·≈Ã«»… ﬂ«–»…" ≈–« ﬂ«‰  «·≈Ã«»… Œ«ÿ∆….
+(«” Œœ„ „ œ«Œ·… »Ì‰„« Õ·ﬁ…)
+
+«·ﬂÊœ:
+
+# include <iostream>
+# include <string>
+using namespace std;
+void main()
+{
+cout<<"Welcome to c++ programming \n\n";
+
+cout<<"Q1:Are five equal three? \n";
+cout<<"a.true"<<endl;
+cout<<"b.false"<<endl;
+cout << " *********************** " << endl ;
+
+cout<<"Q2:Petra is located in Jordan? \n";
+cout<<"a.true"<<endl;
+cout<<"b.false"<<endl;
+cout << " *********************** " << endl;
+
+cout<<"Q3:Is it raining in the summer? \n";
+cout<<"a.true"<<endl;
+cout<<"b.false"<<endl;
+cout << " *********************** " << endl ;
+
+cout<<"Q4:Are the Dead Sea is located between Palestine and Jordan? \n";
+cout<<"a.true"<<endl;
+cout<<"b.false"<<endl;
+cout << " *********************** " << endl;
+
+cout<<"Q5:Is it permissible for Haj pilgrimage more than once? \n";
+cout<<"a.true"<<endl;
+cout<<"b.false"<<endl;
+cout << " *********************** " << endl ;
+char ch='a';
+char an;//answer
+int count=1;
+while (count<=5)
+{
+
+cout<<"The answer for Q"<<count<<" is :";
+cin >> an;
+
+while (an=='b')
+{
+cout<<"\"This a false answer \"\n\n";
+an='a';
+}
+count++;
+}
+
+}
+
+
+-----------------------------------------------------------------------
+ﬂ «»… »—‰«„Ã Ìÿ·» „‰ «·„” Œœ„ ≈œŒ«· «·√—ﬁ«„ N° „‰ √Ã· «·⁄ÀÊ— ⁄·Ï «·Õœ «·√ﬁ’Ï Ê«·Õœ «·√œ‰Ï »Ì‰ «·√—ﬁ«„ «·„œ—Ã…° Ê„‰ À„ Õ”«» „ Ê”ÿ ??(„ Ê”ÿ??) ·Ã„Ì⁄ «·√—ﬁ«„ «·„œ—Ã….
+
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num ,N,count=1;
+int sum=0,avg;
+
+cout<<"plz enter the numbers of numbers u want to compare between : ";
+cin>>N;
+
+cout<<"plz insert a number : ";
+cin>>num;
+
+int max=num;
+int min=num;
+
+while (count<N) // <= because you started from 1 .. count=1
+{
+
+cout<<"plz insert a number : ";
+cin>>num;
+if (num>max)
+max=num;
+
+if (num<min)
+min=num;
+
+sum+=num;
+// we should use it outside while loop > avg=sum/N;
+
+count++;
+}
+
+avg=sum/N;
+
+cout<<"\nThe Largest number is "<<max<<"\n";
+cout<<"\nThe Smaller number is "<<min<<"\n\n";
+
+cout<<"the summation for all inserted numbers is "<<sum<<"\n";
+cout<<"the average for all inserted numbers is "<<avg<<"\n";
+
+}
+
+--------------------------------------------------------------
+Â–« ﬂÊœ ·»—‰«„Ã ÌﬁÊ„ »ÿ»«⁄Â ›« Ê—Â »«·ÊÃ»«  «·„ÿ·Ê»Â ÊÌÕ”» «·”⁄—
+...
+«·ﬂÊœ:
+
+#include<iostream>
+using namespace std;
+void main()
+{
+char buyornot;
+int mealno,counter=0;
+double bill=0;
+cout<<"The menu:\n"
+<<"Meal 1: $2.26\n"
+<<"Meal 2: $3.45\n"
+<<"Meal 3: $6.80\n";
+cout<<"\nDo you want to buy a Meal: ";
+cin>>buyornot;
+while( (buyornot!='N') && (buyornot!='n'))
+{
+if(buyornot=='Y' || buyornot=='y')
+{
+cout<<"\nChoose a number between 1-3: ";
+cin>>mealno;
+switch(mealno)
+{
+case 1:bill+=2.26; counter++; break;
+case 2:bill+=3.45; counter++; break;
+case 3:bill+=6.80; counter++; break;
+}
+cout<<"\nDo you want to buy a Meal: ";
+cin>>buyornot;
+}
+else
+{
+cout<<"\nDo you want to buy a Meal: ";
+cin>>buyornot;
+}
+}
+cout<<"\nYour Bill is: $"<<bill
+<<" for "<<counter <<" meals\n";
+}
+-----------------------------------------------------------
+»—‰«„Ã Ìﬁ—√ À·«À… √—ﬁ«„ ⁄œœ ’ÕÌÕ
+(X° Y° Z)
+ÊÕ”«» «·„⁄«œ·«  «· «·Ì…:
+S = ” * 5 + (Y-Z) / 2 + Y ^ 3
+M = X-Y * 4 ^ 2 + Z * 10
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int x; // first integer
+int y; // secund integer
+int z; // last integar
+int S; // to do calculation
+int M; // to do calculation
+cout<<"enter first integer : "; //cout first output
+cin>>x; //cin first integar
+cout<<"enter secund integer : ";//cout secund output
+cin>>y; //cin secund integar
+cout<<"enter last integer : "; //cout last output
+cin>>z; //cin last integar
+S=x*5+(y-z)/2+(y*y*y); //to do first calculation
+M=x-y*(4*4)+(z*10); // to do last calculation
+cout<<"your output first calculation is :"<<S<<endl; //cout final output
+cout<<"your output last calculation is :"<<M<<endl; //cout final output
+
+return 0;
+}
+
+-------------------------------------------------------------
+Â«– «·»—‰«„Ã ·«œŒ«· «Ì ⁄œœ Ê«ÌÃ«œ ÃœÊ· «·÷—» ··⁄œœ «·–Ì ÌﬁÊ„ »«œŒ«·Â «·„” Œœ„
+
+
+#include<iostream>
+using namespace std;
+void main ()
+{
+int num;
+cout<<"Enter Number: ";
+cin>>num;
+cout<<"\n The Number is "<<num<<"\n";
+cout<<num<<"*1 = "<<num*1<<endl;
+cout<<num<<"*2 = "<<num*2<<endl;
+cout<<num<<"*3 = "<<num*3<<endl;
+cout<<num<<"*4 = "<<num*4<<endl;
+cout<<num<<"*5 = "<<num*5<<endl;
+cout<<num<<"*6 = "<<num*6<<endl;
+cout<<num<<"*7 = "<<num*7<<endl;
+cout<<num<<"*8 = "<<num*8<<endl;
+cout<<num<<"*9 = "<<num*9<<endl;
+cout<<num<<"*10 = "<<num*10<<endl;
+cout<<num<<"*11 = "<<num*11<<endl;
+cout<<num<<"*12 = "<<num*12<<endl;
+cout<<"\n"<<"Good Bye \n";
+}
+
+----- (while)-----------
+#include<iostream>
+using namespace std;
+int main()
+{
+
+double num;
+int counter=1;
+//I has prompt the user to insert any number
+cout<<"Insert the number you'd like to find the multiplication table to\n";
+cin>>num;
+//I used the" while statement" to show multiplication table
+while(counter<13)
+{
+cout<<num<<" * "<<counter<<" = "<<num*counter<<endl;
+counter++;
+}
+
+cout<<"\\\\End of program\\\\\n";
+}
+
+----------------------------------------------------------
+«œŒ«· «·⁄„·Ì… «·Õ”««»ÌÂ Ê «Œ—«Ã «·‰«« Ã
+
+#include<iostream>
+using namespace std;
+void main ()
+{
+int num1,num2;
+char operation;
+cout<<"Enter Number: ";
+cin>>num1;
+cout<<"Enter Number : ";
+cin>>num2;
+cout<<"Enter operation (+,-,*,/) :";
+cin>>operation;
+switch(operation)
+{
+case '+':
+cout<<"= "<<num1+num2<<endl;
+break;
+
+case '-':
+cout<<"= "<<num1-num2<<endl;
+break;
+
+case '*':
+cout<<"= "<<num1*num2<<endl;
+break;
+
+case '/':
+cout<<"= "<<num1/num2<<endl;
+break;
+
+default :
+cout<<"illegal Insert ";
+
+
+}
+
+}
+
+-------------------------------------------------------------
+»—‰«„Ã ÌœŒ· Œ„”… «⁄œ«œ ÊÌ÷—» Â–Â «·«⁄œ«œ »‹ 10,100,1000
+
+#include<iostream>
+using namespace std;
+void main ()
+{
+int num1,num2,num3,num4,num5;
+cout<<"Enter 5 Numbers: ";
+cin>>num1>>num2>>num3>>num4>>num5;
+cout<<"\n";
+cout<<",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n";
+cout<<"N*10"<<"\t\t\t"<<"N*100"<<"\t\t\t"<<"N*1000"<<"\t\t\t\n";
+cout<<num1*10<<"\t\t\t"<<num1*100<<"\t\t\t"<<num1*1000<<"\t\t\t\n";
+cout<<num2*10<<"\t\t\t"<<num2*100<<"\t\t\t"<<num2*1000<<"\t\t\t\n";
+cout<<num3*10<<"\t\t\t"<<num3*100<<"\t\t\t"<<num3*1000<<"\t\t\t\n";
+cout<<num4*10<<"\t\t\t"<<num4*100<<"\t\t\t"<<num4*1000<<"\t\t\t\n";
+cout<<num5*10<<"\t\t\t"<<num5*100<<"\t\t\t"<<num5*1000<<"\t\t\t\n";
+cout<<",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n";
+cout<<",,,,,,,,,,,,MansouR-Albash,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n";
+cout<<"\n\n\n";
+
+
+
+}
+----------------------------------------------------------------
+»—‰«„Ã ÌÊÃœ «·ﬁ”„… Ê»«ﬁÌÂ«
+
+
+#include<iostream>
+using namespace std;
+void main ()
+{
+int num1,num2;
+cout<<"Enter First Number : ";
+cin>>num1;
+cout<<"Enter Secnod Number : ";
+cin>>num2;
+cout<<"\n";
+cout<<"The Multipliction : ";
+cout<<num1*num2<<endl;
+cout<<"\n";
+cout<<"The Division :";
+cout<<num1/num2<<endl;
+cout<<"\n";
+
+
+
+}
+
+
+--------------------------------------------------------------
+Â–« «·»—‰«„Ã ÌﬁÊ„ «·„” Œœ„ »«œŒ«· «—ﬁ«„ .. ⁄‰œ„« ÌœŒ· «·„” Œœ„ —ﬁ„ 0 ,, ÌŸÂ— ·Â „Ã„Ê⁄ «·«⁄œ«œ «·“ÊÃÌ… Ê„Ã„Ê⁄ «·«⁄œ«œ «·›—œÌ… 
+
+// written by : Mansour Albashabsheh
+#include<iostream>
+using namespace std;
+void main ()
+{
+int num,even=0,odd=0;
+cout<<"Enter Number :";
+cin>>num;
+while (num!=0)
+{
+if (num%2==0)
+{
+cout<<"The Number is Even "<<endl;
+even=even+num;
+}
+else
+{
+cout<<"The Number is Odd "<<endl;
+odd=odd+num;
+}
+
+cout<<"Enter Number :";
+cin>>num;
+
+}
+
+cout<<"The Sum Of even Numbers is :"<<even<<endl;
+cout<<"The Sum Of odd Numbers is :"<<odd<<endl;
+
+}
+
+-----------------------------------------------------------------
+»—‰«„Ã ÌÕ”» «”⁄«— «·„√ﬂÊ·« 
+
+
+#include <iostream>
+using namespace std;
+void main ()
+{
+int choice;
+double bill=0;
+
+cout<<"\3\3 welocme to our restaurant \3\3\n\n";
+cout<<"Enter 1 for shawerma (1.5 jd)\n";
+cout<<"Enter 2 for brosted (3.5 jd)\n";
+cout<<"Enter 3 for cola (.25 jd)\n";
+cout<<"Enter 4 for falafel (.35 jd)\n";
+cout<<"Enter 5 for tea (.15 jd)\n";
+cin>>choice;
+
+if (choice <=5 && choice >=-1 && choice !=0)
+{
+while (choice !=-1)
+{
+
+switch (choice)
+{
+case 1 : bill+= 1.5; break;
+case 2 : bill+= 3.5; break;
+case 3 : bill+= .25; break;
+case 4 : bill+= .35; break;
+case 5 : bill+= .15; break;
+default : cout<<"invaled enter >> please retry: ";
+}
+cout<<"your bill become= "<< bill<<endl;
+cout<<"Enter 1 for shawerma (1.5 jd)\n";
+cout<<"Enter 2 for brosted (3.5 jd)\n";
+cout<<"Enter 3 for cola (.25 jd)\n";
+cout<<"Enter 4 for falafel (.35 jd)\n";
+cout<<"Enter 5 for tea (.15 jd)\n";
+cin>>choice;
+
+}
+cout<<"your final bill= "<< bill<<endl<<endl;
+
+}
+
+}
+
+-------------------------------------------------------------
+»—‰«„Ã ÌÕ”» «·ÕÃ„
+
+
+#include<iostream>
+using namespace std;
+void main ()
+{
+int choice;
+
+cout<<"Enter Number Shape (circle=1 , cylinder=2 , rectangle=3) : ";
+cin>>choice;
+switch(choice)
+{
+case 1 :
+int radius;
+cout<<"The Shape is Circle"<<endl;
+cout<<"Enter radius: ";
+cin>>radius;
+cout<<"The Circle Area is "<<3.14*radius*radius<<endl;
+cout<<"The Cirlce Cirecumference "<<2*3.14*radius<<endl;
+break;
+
+case 2:
+int base,height,curcum;
+cout<<"The Shape Is Cylinder"<<endl;
+cout<<"Enter Area Base:";
+cin>>base;
+cout<<"Enter Height :";
+cin>>height;
+cout<<"Enter base circumference :";
+cin>>curcum;;
+cout<<"The Cylinder Volume is "<<base*height<<endl;
+cout<<"The cylinder Surface Area is "<<(2*base)+(curcum*height)<<endl;
+break;
+
+case 3:
+int length,width;
+cout<<"The Shape Is Rectangle"<<endl;
+cout<<"Enter Length: ";
+cin>>length;
+cout<<"Enter Width : ";
+cin>>width;
+cout<<"The Rectangle Area is "<<width *length<<endl;
+cout<<"The Rectangle Perimeter "<<2*(width+length)<<endl;
+break;
+
+default :
+cout<<"Illegal InserT"<<endl;
+
+}
+
+cout<<"\n\n\nbest wishes ,, bye ,, "<<endl;
+
+}
+----------------------------------------------------------------
+Â–« »—‰«„Ã ÌﬁÊ„ »Õ”«» À„‰ ÿ»«⁄Â √Ê—«ﬁ
+
+›«–« ﬂ«‰  «·«Ê—«ﬁ 10 Ê—ﬁ«  «Ê «ﬁ· ”⁄— «·Ê—ﬁÂ 20 ›·”
+
+Ê«–« ﬂ«‰  «·«Ê—«ﬁ «ﬂÀ— „‰ 20 Ê—ﬁÂ ”⁄— «·Ê—ﬁÂ 10 ›·Ê”
+
+›ÌﬁÊ„ »ÿ»«⁄Â ”⁄— «·√Ê—«ﬁ «·„ÿ·Ê»Â
+
+#include<iostream>
+using namespace std;
+int main()
+{int paper;
+int sum=0;
+cout<<"enter how much you need paper ";
+cin>>paper;
+if(paper<=10)
+{sum=paper*20;
+cout<<"The amount required is: "<<sum<<" fils"<<endl;
+}
+else if(paper<=20&&paper>=10)
+{ sum=sum-10;
+sum=paper*15;
+cout<<"The amount required is: "<<sum<<" fils"<<endl;
+}
+else if(paper>20)
+{sum=sum-30;
+sum=paper*10;
+cout<<"The amount required is: "<<sum<<" fils"<<endl;
+}
+return 0;
+}
+---------------------------------------------------------------------
+»—‰«„Ã  ﬁÊ„ »«œŒ· ÿ—›Ì‰ ›«–« ﬂ«‰« «·ÿ—›Ì‰ „ ”«ÊÌ«‰ ›ÌﬂÊ‰ „—»⁄ ÊÌÕ”» „”«Õ Â «„« «–« ·„ ÌﬂÊ‰« „ ”«ÊÌ«‰ ›ÌﬂÊ‰ „” ÿÌ· ÊÌÕ”» „”«Õ Â
+
+#include <iostream>
+using namespace std;
+int main()
+{
+double length;
+double width;
+double square;
+double rectangle;
+cout<<"enter first value: ";
+cin>>length;
+cout<<"enter secund value: ";
+cin>>width;
+square=length*length;
+rectangle=width*length;
+if (length==width)
+cout<<"This square and it space is: "<<square<<endl;
+else if(length!=width)
+cout<<"This is rectangle and it space is: "<<rectangle<<endl;
+return 0;
+}
+-----------------------------------------------------------------------
+Â–« »—‰«„Ã  œŒ· «”„ ›—Ìﬁ ﬂ—Â ﬁœ„ Ê⁄œœ «·„»«—Ì«  «· Ì ›«“ »Â« Ê⁄œœ «·„»«—Ì«  «· Ì
+Œ”— »Â« ›ÌﬁÊ„ »ÿ»«⁄Â «–« ﬂ«‰ Â–« «·›—Ìﬁ ›«∆“ «Ê Œ«”—
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+string team;
+int won,lost;
+double sum;
+double sum1;
+cout<<"enter name of a football team: ";
+cin>>team;
+cout<<"enter the number of games won: ";
+cin>>won;
+cout<<"enter the number of games lost: ";
+cin>>lost;
+sum=won+lost;
+sum1=(won/sum)*(100/100);
+cout<<"the games is:"<<sum<<endl;
+cout<<"the percentage of games won is: "<<sum1<<endl;
+return 0;
+}
+--------------------------------------------------------------------
+Â–« »—‰«„Ã ÌﬁÊ„ «·„” Œœ„ »«œŒ«· 3 ﬁÌ„ ›ÌﬁÊ„ «·»—‰«„Ã »ÿ»«⁄Â „Ã„Ê⁄ «·«—ﬁ«„ «·À·«ÀÂ «·„œŒ·Â
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number1;
+int number2;
+int number3;
+int x=0;
+int sum=0;
+cout<<"Insert a number: ";
+cin>>number1;
+cout<<"Insert a number: ";
+cin>>number2;
+cout<<"Insert a number: ";
+cin>>number3;
+if(x<=number1&&x<=number2&&x<=number3)
+sum=number1+number2+number3;
+cout<<"The sum is: "<<sum<<endl;
+
+return 0;
+}
+--------------------------------------------------------------------
+˝˛
+»—‰«„Ã »«” Œœ«„ «· condintonal operator ·«ÌÃ«œ «·«⁄œ«œ «· Ì  ﬁ»· «·ﬁ”„… ⁄·Ï «·—ﬁ„ 5
+
+// written by : Mansour Albashabsheh
+#include<iostream>
+using namespace std;
+void main ()
+{
+int num1,num2;
+cout<<"Enter Two Number :";
+cin>>num1>>num2;
+cout<<num1;
+cout<<(num1%5==0 ?" is Divisvle by 5":" Not Divisible by 5")<<endl;
+cout<<num2;
+cout<<(num2%5==0 ?" is Divisvle by 5":" Not Divisible by 5")<<endl;
+}
+
+---------------------------------------------------------------------
+ﬂ «»… «·»—‰«„Ã «·–Ì „ÿ«·»… «·„” Œœ„ ·≈œ—«Ã √Õ—› („‰ AH) À„ »«” Œœ«„ ﬂ ·… «· »œÌ· «·⁄ÀÊ— ⁄·Ï ⁄œœ „‰ A° B° Ê..... Ê··H. «ﬁÊ· ··„” Œœ„ ≈œ—«Ã «·Õ—› ('!') ·Êﬁ› Õ·ﬁ….
+
+#include <iostream>
+using namespace std;
+void main ()
+{
+
+char x='a' ;
+int An=0,Bn=0,Cn=0,Dn=0,En=0,Fn=0,Zn=0;//An,Bn,Cn...etc are the number of characters entered by user .
+
+
+while (x!='!')
+{
+cout<<"Enter your characters and if you want to stop entering characters enter <!> ";
+cin>>x;//X Is the characters
+
+switch (x)
+{
+case 'A':
+An=An+1;
+break;
+case 'B':
+Bn=Bn+1;
+break;
+case 'C':
+Cn=Cn+1;
+break;
+case 'D':
+Dn=Dn+1;
+break;
+case 'E':
+En=En+1;
+break;
+case 'F':
+Fn=Fn+1;
+break;
+default:
+Zn=Zn+1;
+}
+}
+
+int i=1;
+cout<<endl;
+
+cout<<endl<<endl;
+
+cout<<"A is repeated "<<An<<" times ."<<endl;
+cout<<"B is repeated "<<Bn<<" times ."<<endl;
+cout<<"C is repeated "<<Cn<<" times ."<<endl;
+cout<<"D is repeated "<<Dn<<" times ."<<endl;
+cout<<"E is repeated "<<En<<" times ."<<endl;
+cout<<"F is repeated "<<Fn<<" times ."<<endl;
+cout<<"other characters are repeated "<<Zn<<" times"<<endl;
+}
+
+
+------------------------------------------------------------
+Â«Ì 3 Õ·Ê· ·»—‰«„Ã «‰Ê  œŒ· —ﬁ„Ì‰ Ê ÌÕœœ „ÊÃÊœÌ‰ »√Ì —»⁄ »«·‘ﬂ· «·œÌﬂ«— Ì
+
+Solution # 1:
+
+#include<iostream>
+using namespace std;
+void main()
+{
+int x,y;
+cout<<"Please insert (x,y) point: ";
+cin>>x>>y;
+cout<<"("<<x<<","<<y<<") exist in ";
+if(x==0)
+{
+switch(y)
+{
+case 0:
+cout<<"Original point"<<endl;
+break;
+default:
+if(y<0)
+cout<<" in Q4,y-axis."<<endl;
+else
+cout<<" in Q1,y-axis."<<endl;
+}
+}
+if(y==0 && x!=0)
+{
+if(x>0)
+cout<<" in Q1,x-axis."<<endl;
+else
+cout<<" in Q2,x-axis."<<endl;
+}
+if(x>0)
+{
+if(y>0)
+cout<<" in Q1\n";
+else if(y<0)
+cout<<" in Q4\n";
+}
+else
+{
+if(y>0)
+cout<<" in Q2\n";
+else if(y<0)
+cout<<" in Q3\n";
+}
+}
+
+------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+int x, y;
+cin>>x>>y;
+
+if(x==0 && y==0)
+cout<<"the point on y axis:"<<endl;
+else if(x==0 )
+cout<<"the point on y axis:"<<endl;
+else if(y==0 )
+cout<<"the point on x axis:"<<endl;
+else if(x<0)
+switch(y<0)
+{
+case true: cout<<"In Q3"<<endl;break;
+case false: cout<<"In Q2"<<endl; break;
+}
+else
+switch(y>0)
+{
+case true: cout<<"In Q1"<<endl;break;
+case false: cout<<"In Q4"<<endl; break;
+
+}
+
+}
+--------------------
+#include<iostream>
+#include<cassert>
+using namespace std;
+int main()
+{
+int x,y;
+cout<<"Please insert (x,y) point: ";
+cin>>x>>y;
+cout<<"("<<x<<","<<y<<") exist in ";
+switch(x)
+{
+case 0:
+if(y==0)
+cout<<"in Origin point\n";
+else
+cout<<"in y-axis\n";
+break;
+default:
+if(y==0)
+cout<<"in x-axis\n";
+else if(x>0 && y>0)
+cout<<"in Q1\n";
+else if(x<0 && y>0)
+cout<<"in Q2\n";
+else if(x<0&&y<0)
+cout<<"in Q3\n";
+else if(x>0 && y<0)
+cout<<"in Q4\n";
+}
+
+}

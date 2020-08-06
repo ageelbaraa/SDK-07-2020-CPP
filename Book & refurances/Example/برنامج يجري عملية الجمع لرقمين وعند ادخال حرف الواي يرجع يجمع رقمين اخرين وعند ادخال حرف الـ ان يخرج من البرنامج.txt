@@ -1,0 +1,44 @@
+
+Write program that prompts user to enter two number and print the sum.. then asked user if he want to do this again ..
+Sample Run:
+
+First Number : 5
+Second Number : 3
+Their sum is 8
+Do you want to do this again?
+y
+
+Enter a number: 2
+Enter another number: 4
+Their sum is 6
+Do you want to do this again?
+N
+
+Thank you for using our program.
+
+-----------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+
+int num1, num2;
+char again;
+
+do
+{
+cout << "Enter a number: ";
+cin >> num1;
+cout << "Enter another number: ";
+cin >> num2;
+cout << "Their sum is " << (num1 + num2) << endl;
+cout << "Do you want to do this again? ";
+cin >> again;
+}while (again == 'y' || again == 'Y');
+
+cout<<"Thank you for using our program."<<endl;
+
+return 0;
+}

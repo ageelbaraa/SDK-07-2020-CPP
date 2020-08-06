@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int x= 5; // Globle Variable
+int fun()
+{
+	//int x = 0;
+	x=10;
+	return 1;
+}
+int fun1(int w=fun())
+{
+	cout << "Helo World! : ";
+	return 1+1; // 2
+}
+int fun2()
+{
+	int x=3;
+	return 1;
+}
+int main()
+{
+	cout << fun() << endl; // 2
+	cout << x << endl; // 5
+	cout << fun2() << endl;
+	cout << x << endl; // 5
+	cout << fun()+fun2();
+
+}

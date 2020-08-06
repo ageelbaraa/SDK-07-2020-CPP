@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num ,N,count=1;
+int sum=0,avg;
+
+cout<<"plz enter the numbers of numbers u want to compare between : ";
+cin>>N;
+
+cout<<"plz insert a number : ";
+cin>>num;
+
+int max=num;
+int min=num;
+
+while (count<N) // <= because you started from 1 .. count=1
+{
+
+cout<<"plz insert a number : ";
+cin>>num;
+if (num>max)
+max=num;
+
+if (num<min)
+min=num;
+
+sum+=num;
+// we should use it outside while loop > avg=sum/N;
+
+count++;
+}
+
+avg=sum/N;
+
+cout<<"\nThe Largest number is "<<max<<"\n";
+cout<<"\nThe Smaller number is "<<min<<"\n\n";
+
+cout<<"the summation for all inserted numbers is "<<sum<<"\n";
+cout<<"the average for all inserted numbers is "<<avg<<"\n";
+
+}

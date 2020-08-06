@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+//ÔÑÍ  ãä ÇÚÏÇÏ ÑÇİÚ ÇáİÍíáí  - cs101 ( static int )
+void fun ()
+{
+
+	static int x=3;
+	int y=30;
+	x=x+2; // 5
+	y=x+y; // 35
+
+	cout<<x<<"    "<<y<<endl;
+	 //  5           35 
+
+}
+void main ()
+{
+
+	fun(); // 5  35
+	fun(); // 7 because 5+2=7    37 because  35+2=37
+	// 7   37
+}
+
+-----------------------------------------------------------
+#include <iostream>
+using namespace std;
+void fun (int x)
+{
+	static int z=0;
+	z=z+x;
+	cout<<z<<endl;
+
+
+}
+void main ()
+{
+
+	for ( int i=0;i<5;i++ )
+		fun(i);
+
+}
+
+//0
+//1
+//3
+//6
+//10

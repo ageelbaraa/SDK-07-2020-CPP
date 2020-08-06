@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int x,y=1,c=0;
+cin>>x;
+while (y < x)
+{
+if (x%y == 0) c++;
+y++;
+}
+cout << (c == 1? "Primary" : "Not Primary") <<"\n";
+return 0;
+}
+
+-------------------------------------------------------------
+// Prime or noT Prime
+#include <iostream>
+using namespace std ;
+void main()
+{
+int num,t=3;bool b=true;
+cout<<"Enter your number: ";cin>>num;
+if (num==2||num==3)
+cout<<"prime number\n";
+if (num==1||num%2==0&&num!=2)
+cout<<"not prime number\n";
+if (num%2!=0)
+{ while (t<num&&b==true)
+{if (num%t!=0)
+{b=true;t=t+2;}
+else
+b=false;}
+if (b==true&&num!=3&&num!=1)
+cout<<"prime number\n";
+else if (b==false&&num!=3&&num!=1)
+cout<<"not prime number\n";
+}
+// i hope the task complet successfully.
+
+}

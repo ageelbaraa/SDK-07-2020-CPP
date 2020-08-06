@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+//ÔÑÍ ãæÖæÚ ÇáÓßææÈ ãä ÇÚÏÇÏ ÑÇİÚ ÇáİÍíáí  - cs101
+int w=0;
+void main ()
+{
+
+	int x=3;
+	int z=8; // ok 
+	int c=1;
+	cout<<x<<endl; // 3
+
+	{
+		int x=4;
+		int z=5;
+		cout<<x<<"  "<<z<<endl; // 3 5
+	}
+
+	{
+		int c=1; // error
+		cout<<x<<endl; // 3
+	}
+
+	cout<<c<<endl; // 1
+	cout<<x<<endl; // 3
+	cout<<z<<endl; // error becaus not defiend
+
+	cout<<::w<<endl; // Globle     0
+
+
+}

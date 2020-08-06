@@ -1,0 +1,124 @@
+Download this file from the site Rafea educational programming C + +
+Example ( for & breake/continue )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+Example (for & breake)
+
+--------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int i;
+	for (i=0;i<3;i++)
+	
+		break;
+		cout<<i;
+		cout<<"hi";
+	
+	cout<<"ok";
+	return 0;
+}
+
+--------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int i;
+	for (i=0;i<3;i++)
+	{
+		break;
+		cout<<i;
+		cout<<"hi";
+	}
+	cout<<"ok";
+	return 0;
+}
+--------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int i;
+	for (i=0;i<3;i++)
+	{
+		if (i==5)
+		break;
+		cout<<i;
+		cout<<"hi";
+	}
+	cout<<"ok";
+	return 0;
+}
+--------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+Example (for & continue)
+
+--------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int i;
+	for (i=0;i<10;i++)
+	{
+		if (i==5)
+		continue;
+		cout<<i;
+		cout<<"hi";
+	}
+	cout<<"ok";
+	return 0;
+}
+--------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	int i;
+	for (i=0;i<10;i++)
+	{
+		
+		continue;
+		cout<<i;
+		cout<<"hi";
+	}
+	cout<<"ok";
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

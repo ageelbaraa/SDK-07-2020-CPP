@@ -1,0 +1,62 @@
+Download this file from the site Rafea educational programming C + +
+Example ( for - while - do  print number 1 to 100 )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( for print number 1 to 100 )
+
+-----------------------------------------------------------------
+
+
+Ìÿ»⁄ «·ﬂÊœ ⁄·Ï for 
+-----------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	//print number 1 to 100
+for(int i=1;i<=100;i++)
+{
+    cout<<i<<"\t";
+}
+return 0;
+} 
+
+
+
+‰›” «·„À«· ·ﬂ‰ ⁄·Ï Wihle
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=1;
+while(i<=100)
+{
+    cout<<i<<"\t";
+    i++;
+}
+return 0;
+}  
+
+
+
+
+
+‰›” «·„À«· ·ﬂ‰ ⁄·Ï Wihle - do
+-----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+int i=1;
+do
+{
+    cout<<i<<"\t";
+    i++;
+}
+while(i<=100);
+return 0;
+}

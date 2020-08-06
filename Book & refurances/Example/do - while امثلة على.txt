@@ -1,0 +1,247 @@
+Download this file from the site Rafea educational programming C + +
+Example ( while & do  )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( while )
+
+--------------------------------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (x<=3)
+		cout<<x++;
+
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (x<=3)
+	{
+		cout<<x++;
+		cout<<x;
+	}
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (x>=3)
+		cout<<x++;//no output
+	
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (x<=3)
+	{
+		cout<<x;
+		cout<<"xxx"; //output infinetif
+	}
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (x<=3);
+	{
+		cout<<x;
+		cout<<"xxx"; //not output becaus ';' after while
+	}
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (true);
+	{
+		cout<<++x;
+		cout<<"xxx"; //not output 
+	}
+	cout<<"rafea fheely";
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=1;
+	while (7);
+	{
+		cout<<++x;
+		cout<<"xxx"; //not output 
+	}
+	cout<<"rafea fheely";
+	return 0;
+}
+
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int a=0;
+	while (a!=5)
+	{
+		cin>>a; // if input 6 =6xxx contenis your statment....  if input 5= 5xxx just
+		cout<<"xxx";
+	}
+	
+	return 0;
+}
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example (do) and while
+
+*********************************************************************************************
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	bool found= false;
+	while (! found)
+	{
+		int x;
+		cin>>x;// input 6
+			if (x==5)
+				found= true;
+
+			else 
+				cout<<"rafea ali fheely";
+				
+	}
+	
+	return 0;
+}
+-----------------------------------------------------
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=0;
+	do
+	cout<<x++;
+	while (x<3);
+	
+	return 0;
+}
+
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=0;
+	do
+	cout<<x++;
+	while (x<3)//erorr becaus not ';' after while
+	
+	return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int x=0;
+	do
+	{
+	cout<<x++;
+	cout<<"xxx";
+	}
+	while (x<3);
+	
+	return 0;
+}
+-----------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int counter;
+	cout<<"How many hellos?";
+	cin>>counter;
+		do
+		{
+		
+			cout<<"Hello\n";
+			counter--;
+		}
+
+		while (counter>0);
+		cout<<"Counter is:"<<counter<<endl;
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

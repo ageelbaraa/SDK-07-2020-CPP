@@ -1,0 +1,49 @@
+Download this file from the site Rafea educational programming C + +
+Example ( if  )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( if )
+
+--------------------------------------------------------------------------
+
+
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int value1;
+	int value2;
+	int larger;
+
+	cout<<"Enter two numbers\n";
+	cin>>value1>>value2;
+
+	if (value1>value2){
+			larger= value1;
+			cout<<"The Value 1 is :"<<value1;
+		cout<<"\nOk\n";
+		int x;
+		cin>>x;
+
+		if (x==value1){cout<<"The x = "<<value1; cout<<" Thank you for Choose x=value1\n\n";}
+		
+		else if (x>value1)
+			cout<<"Good by\n";
+	
+	}
+	
+		else if (value1=value2){
+				larger= value2;
+			cout<<"The Value 2 is :"<<value1;
+		cout<<"\nOk\n";
+		
+			
+		}
+		
+		cout<<"\nThank you for use Programm Comparison of Value\n"<<"\nDesgin: Rafea Fheely\n\n";
+	return 0;
+}

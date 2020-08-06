@@ -1,0 +1,249 @@
+Download this file from the site Rafea educational programming C + +
+Example ( Statmant While Loop )
+made in: rafea fheely
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Example ( Statmant While Loop )
+
+-----------------------------------------------------------------
+
+
+
+#include <iostream>
+using namespace std ;
+int main()
+{ // the programme Ex is counter
+	
+	int counter=1,number,factorial=1;
+	cout<<"enter positive:";
+	cin>>number;
+	while (counter<number)
+	{
+		factorial *=counter;
+		counter +=1;
+	}
+	cout<<"The factorial of"<<number<<"is"<<factorial<<endl;
+	return 0;
+}
+----------------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int value=0;
+	int max=0;
+	
+
+	while (value!=-1)
+	{
+		cout<<"enter positive"<<"(-1 to step):"<<endl;
+		cin>>value;
+		
+			if (value >max)
+				max= value;
+	}
+			
+	cout<<"The maximum value found is "<<max<<"\n\n";
+	return 0;
+}
+-----------------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int num=7;
+	bool b= false;
+	while (b != true)//if write (b = true) = infinit Loop
+	{
+		cout<<"*\n";
+		num=num+3;
+		if (num >20)
+			b=true;//if b=false = infinit Loop
+	}
+	cout<<"\n\n";
+	return 0;
+}
+----------------------------------------------------------
+
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int count=0;
+	bool found= false;
+	while (!found)//if write (found) = not output
+	{
+		//cout<<"*\n";
+		//num=num+3;
+		cout<<"Loop Statmant  "<<count<<"\n";
+		
+		if (count ==5)
+		{found=true;}
+		
+		else
+		count = count + 1;
+	}
+
+	return 0;
+}
+----------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{bool value=true ;
+while(value == true || value == false )
+{
+cout << " Enter the value \n " ;
+cin >> value ;
+
+if (value ==true )
+{cout << " the value is bool \n " ;
+break;}
+else
+
+cout << " the value isn't bool \n " ;
+
+continue;
+}
+
+}
+----------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{
+	int value ;
+	cin >> value ;
+
+	while(value > 1 )
+	{
+		cout << " Enter the value \n " ;
+		cin >> value ;
+
+			if (value ==1 )
+				{cout << " Very Good \n " ;}
+					
+			else
+				cout << " NOT Output is Programmes \n " ;
+					continue;
+	}
+
+cout<<"Good by\n\n";
+
+}
+----------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{
+	int value ;
+	cin >> value ;
+
+	while(value > 1 )
+	{
+		cout << " Enter the value \n " ;
+		cin >> value ;
+
+			if (value ==1 )
+			{
+				cout << " Very Good \n " ;
+					break;
+			}
+
+			else
+				cout << " the value isn't bool \n " ;
+					continue;
+	}
+
+cout<<"Good by\n\n";
+
+}
+----------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main()
+{
+		int v;
+		cin>>v;
+
+
+		while(v==1)
+		{
+			cout << " Enter the value \n " ;
+			cin >> v ;
+
+				if (v==5)
+				{cout<<"Enter the value\n"; cin>>v;}
+
+				else if (v==10)
+				{
+					cout<<"Enter your is value\n"; 
+					cin>>v;
+				}	
+				if (v==15)
+				{cout<<"\n"<<"Good By\nMade Programme:Rafea Ali Fheely\nData:14/11/2012\nThank you ...\n\n";}
+		 }
+				
+			{cout<<"\n"<<"Good By\nMade Programme:Rafea Ali Fheely\nData:14/11/2012\nThank you ...\n\n";}	
+	return 0;
+}
+----------------------------------------------------------
+#include <iostream>
+using namespace std ;
+int main()
+{ 
+	
+	int i=0;//if i=21 ==> OK
+
+	while (i<=20)
+	{
+		cout<<i <<"\n";
+		i=i+5;// or -,*,/
+	}
+
+cout<<"\nOK\n\n";
+	return 0;
+}
+----------------------------------------------------------
+# include <iostream>
+using namespace std;
+int main ()
+{
+
+	int x,i,j;
+	cout<<"enter the size : ";
+	cin>>x; 
+	
+	while (x<5)
+	{
+		cout<<x++<<"  "<<endl;
+		cout<<"enter num";
+		cin>>i;
+	}
+
+	return 0;
+}
+----------------------------------------------------------
+# include <iostream>
+using namespace std;
+int main ()
+{
+
+	int x=5;
+	
+	while (x<=0)// if kan't el 2sarha Akbar(x>=0) Output = infinit Loop
+	cout<<x++;
+	
+
+
+	return 0;
+}
+
+
+
+
+

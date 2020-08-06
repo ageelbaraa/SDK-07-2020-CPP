@@ -1,0 +1,686 @@
+// arrays as parameters
+#include <iostream>
+using namespace std;
+void printarray (int arg[], int length) 
+{
+  for (int n=0; n<length; n++)
+    cout << arg[n] << " ";
+  cout << "\n";
+}
+
+void rafea(int R[], int Rafea)
+{
+	for (int i=0;i<4;i++)
+		cout << R[i];
+	cout << "\n";
+}
+int main ()
+{
+	int Rafea1[] = {1,2,3,4};
+	int Rafea2[] = {5,6,7};
+	int firstarray[] = {5, 10, 15};
+	int secondarray[] = {2, 4, 6, 8, 10};
+
+		  printarray (firstarray,3);
+		  printarray (secondarray,5);
+		  rafea (Rafea1,2);
+		  rafea (Rafea2,1);
+  
+  return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+void main()
+{
+	int w,r,q,sum=0,a[5]={1,2,3,4,5};
+	int z[2]={33,22};
+	int max=z[0];
+	int min=z[0];
+	int T[]={11,22,33,44,55,66,77,88,99,00};
+	char c;
+	int num;
+	int x[9]={1,2,3,4,5,6,7,8,9};
+	int y[9]={12,3,6,2,1,4,6,8,64};
+	
+	cout << "Choose Now : " << endl;
+	cout << "1. Read matrix monochrome and copies the first to the second " << endl;
+	cout << "2. Find the Sum number of matrix " << endl;
+	cin >> c;
+
+	for(c=0;c<=9;c++)
+	{
+		do
+		{
+			switch(c)
+			{
+			case 1: // Read matrix monochrome and copies the first to the second
+				{
+				for(int v=0;v<9;v++)
+				{ 
+					y[v]=x[v];
+					//x[v]=y[v];
+					cout<<y[v]<<"";
+				}
+				break;
+				}
+			case 2: // Find the sum number of matrix
+				{
+				cout << "\n\nENTER Numbers :\n";
+				for (w=0;w<=2;w++)
+				{
+					cin >> a[w];
+					sum+=a[w];
+				}
+				cout << "Sum = " << sum << endl;
+				break;
+				}
+			}
+
+		}
+		while( c==1 && c==2 );
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+void main()
+{
+	int w,r,q,sum=0,a[5]={1,2,3,4,5};
+	int z[2]={33,22};
+	int max=z[0];
+	int min=z[0];
+	int num;
+	
+	cout << "Enter Arayy : ";
+	for (int i=0;i<=4;i++)
+		cin >> a[i];
+		cout << endl;
+	//
+
+	for (int i=0;i<=4;i++)
+		cout << a[i]<< "  ";
+	//
+
+
+	//
+	cout << "\n\nANY NUMBER : 33 , 22 \n";
+	//cin >> z[r] >> z[q];
+
+	for (int r=0;r<=1;r++)
+	{
+		
+		if ( z[r] > max )
+			max= z[r];
+
+		else if ( a[r] < min )
+			min= z[r];
+	}
+
+	cout << "Max = " << max << endl;
+	cout << "Min = " << min << endl;
+	cout << "Avarge = " << sum/2;
+
+	cout << "\n\n\n";
+
+	int A[20]={2,3,4,5,6,8,9,7,3,4,8,0,4,2,1,6,9,3,0,5};
+	int B[10]={0};
+
+	for(int i=0;i<=19;i++)
+		B[A[i]]++;
+	cout << "The Number				The Frequency " << endl;
+
+	for(int i=0;i<=9;i++)
+		cout << i << "					" << B[i] << endl;
+
+
+	//
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{
+	
+	int a[5],i;
+
+	for (i=0;i<=4;i++)
+		cin >> a[i];
+
+		//cout << a[i] << " ";
+	cout << endl;
+
+	for (i=4;i>=0;i--)
+		cout << a[i] << " ";
+	cout << endl;
+
+
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{
+	
+	int x[10]={2,22,45,78,333,556,1,0,67,11};
+	int i,j,t;
+	
+	for(i=0;i<10;i++)
+
+		for(j=0;j<10;j++)
+			
+			if(x[i]<x[j])  //  if(x[i]>x[j])
+			{ 
+				t=x[j]; 
+				x[j]=x[i]; 
+				x[i]=t;
+			}
+			
+	for(i=0;i<10;i++)
+		cout<<x[i]<< endl;
+	cout << endl;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{ 
+	int x[5],i,j,min1,min2;
+	
+	cout<<"Enter The Components Of Array\n";
+	
+	for(i=0;i<5;i++)
+		cin>>x[i];
+	
+	min1=min2=x[0];
+	
+	for(i=0;i<5;i++)
+		
+		if(x[i]<min1) 
+		{
+			min2=min1;
+			min1=x[i];
+		}
+		cout << "\n" << min1 << "\t" << min2 << endl;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//»—‰«„„Ã ÌÕ”» «·⁄œœ «·«ﬂ»— Ê«·«’€— Ê«·„Ã„Ê⁄
+#include <iostream>
+using namespace std;
+void main ()
+{
+
+	int A []={22,33,44,55};
+	int sum=0, max=A[0] ,min=A[0];
+
+	for (int i=0;i<=4;i++)
+	{
+		sum=sum+A[i];
+		
+			if ( A[i] > max )
+				max=A[i];
+			if ( A[i]< min )
+				min=A[i];
+	}
+
+		cout << "The Max " << max << endl;
+		cout << "The Mini " << min << endl;
+		cout << "The Avarge " << sum/5 << endl;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{
+
+	int x;
+	int A[]={1,5,4,5,8,4,6,9,4,1,2,3,1,2,3,5,1,3,7,8,9,4,5,6,8,7,4,2,3,2,1,3,5,1,3,6,1,5,6,4,9,2};
+
+	for (int i=0;i<=5;i++)
+	{
+		cin >> x;
+		if (x == A[i])
+		{
+			cout << "Found\n";
+			break;
+		}
+		else if (x != A[i])
+			cout << "Not Found\n";
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+void main()
+{
+
+	int grades[]={30,40,55,68,22};
+	int temp;
+
+	cout << "The grade " << endl;
+
+	for (int i=0;i<10;i++)
+
+		for (int j=i+1;i<10;j++)
+		{
+		
+			if (grades[i]>grades[j])
+			{
+				temp=grades[i];
+				grades[i]=grades[j];
+				grades[j]=temp;
+				break;
+			}
+			for (int i=0;i<=9;i++)
+				cout << grades[i] << "  " << endl;
+		}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//«·«⁄œ«œ «·“ÊÃÌ… Ê«·›—œÌ…
+#include <iostream>
+using namespace std;
+void odd(int A[])
+
+{
+	for ( int i=0 ; i<=4 ; i++ )
+	{
+		if (A[i] % 2 ==0 )
+			cout < <A[i] << " is even\n";
+
+		else if (A[i] %!2 ==0 )
+			cout << A[i] << " is odd\n";
+	}
+
+}
+int main ()
+{
+	
+	int A[5];
+
+	for (int i=0 ; i<=4 ; i++ )
+	{
+	
+		cin >> A[i] ;
+
+	}
+
+	odd(A);
+	  
+		
+	 
+	
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//»—‰«„Ã ÌﬁÊ„ »Õ”«» „Ã„Ê⁄ «·«⁄œ«œ
+#include <iostream>
+using namespace std;
+void main()
+{
+	int a[5];
+	int i,sum=0;
+
+	for(i=0;i<5;i++)
+	{
+		cin >> a[i];
+		sum+=a[i];
+		
+	}
+		cout << sum;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+// »—‰«„Ã ÌœŒ· Œ„”… «⁄œ«œ À„ ÌﬁÊ„ »⁄ﬂ”Â«  
+#include <iostream>
+using namespace std;
+void main()
+{
+	int a[5];
+	int i;
+
+	for(i=0;i<5;i++)
+	
+		cin >> a[i];
+	
+	for(i=0;i<5;i++)
+	
+		cout << a[i] << endl;
+	
+	for(i=4;i>=0;i--)
+	
+		cout << a[i];
+	
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//A a ÿ»«⁄… ⁄œœ „—«   ﬂ—«— «·Õ—›Ì‰ ›Ì ™–Â «·”·”·… 
+#include <iostream>
+using namespace std;
+void main()
+{
+	const int n=5;
+	int a[n];
+	int i,count=0;
+
+	for(i=0;i<n;i++)
+	{
+		cin >> a[n];
+
+		if (a[n]=='A' || a[n]=='a')
+			count++;
+
+	}
+	cout << count;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main()
+{
+	const int size=5;
+	char num[size];
+	//use for loop
+
+	for(int i=0;i<size;i++)
+		num[i]=' ';
+		cout<<"inseart char just (a,b,c,d,e) : \n";
+
+	for(int i=0;i<size;i++)
+		cin>>num[i];//input a,b,c,d,e
+
+	for(int i=0;i<size;i++)
+
+		//if (num[i]=='a'||num[i]=='A'||num[i]=='o'||num[i]=='O'||num[i]=='i'||num[i]=='I'||num[i]=='u'||num[i]=='U'||num[i]=='e'||num[i]=='E')
+		num[i]='V';
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+// ÿ»«⁄… «·«—ﬁ«„ «·«ﬂ»— „‰ 5 Êÿ»«⁄… «„«ﬂ‰  Ê«ÃœÂ« »„’›Ê›… ÕÃ„Â« 10
+#include <iostream>
+using namespace std;
+void main()
+{
+	const int n=10;
+	int a[n];
+	int i;
+
+	for(i=0;i<n;i++)
+	{
+		cin >> a[i];
+
+		if (a[i]>5)
+		{
+			cout << "The Number of begger (5) : " << a[i] << endl;
+		}
+
+
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+// »⁄÷ «·«„Ê— «·„Â„… ›Ì «·„’›Ê›«  - «·«Œÿ«¡
+#include <iostream>
+using namespace std;
+void main()
+{
+	int a[]={2,3,4};
+//	int a[];	// error
+//	int a[]={}; // error
+//	int a[-3];  // error
+//	int a[1.3]; // error
+
+	cout << a[0];
+//	cout << a[];  // error
+	cout << a[4]; // rubbish
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//„’›Ê›… ÕÃ„Â« 50 ⁄‰’— Ê‰—Ìœ «œŒ«· »⁄÷ ⁄‰«’—Â« «Ê ﬂ·Â« À„ ‰ÿ»⁄ ⁄‰«’— «·„’›Ê›… Ê«ﬂ»— ﬁÌ„… »Ì‰Â«
+#include <iostream>
+using namespace std;
+int max(int x,int y)
+{
+	if(x>y)
+		return x;
+	else 
+		return y;
+}
+int main()
+{
+	int A[50],n,max_value,i;
+	cout << "Enter number of elements : ";
+	cin >> n;
+
+	for(i=0;i<n;i++)
+	{
+		cout << "Enter the element " << i+1 << " : ";
+		cin >> A[i];
+	}
+	max_value=A[0];
+
+	for(i=1;i<n;i++)
+		max_value=max(max_value,A[i]);
+		cout << "\nThe array is : ";
+
+		for(i=1;i<n;i++)
+			cout << A[i] << "  ";
+			cout << "\nThe largest number is: " << max_value << "\n\n";
+
+	return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+//»—‰«„Ã Ìﬁ—√ „’›Ê›… „‰ Œ„” «⁄œ«œ ÊÌÿ»⁄ ⁄œœ «·«⁄œ«œ «·„ÊÃ»… Ê«·”«·»… Ê⁄œœ «·«’›«—
+#include <iostream>
+using namespace std;
+void main()
+{
+
+	int matrix[5],i,Negative=0,Positive=0,Zero=0;
+
+	for (i=0;i<5;i++)
+		cin >> matrix[i];
+
+	for (i=0;i<5;i++)
+	{
+		if ( matrix[i] > 0 )
+			Positive++;
+		else if ( matrix[i] < 0 )
+			Negative++;
+		else
+			Zero++;
+	}
+
+	cout << " The Positive Number : " << Positive << endl;
+	cout << " The Negative Number : " << Negative << endl;
+	cout << " The Zero's   Number : " << Zero << endl;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+// — Ì» ⁄‰«’— „’›Ê›…  — Ì»«  ’«⁄œÌ«
+#include <iostream>
+using namespace std;
+void main()
+{
+	const int n=5;
+	int l,i,j,k,temp,arr[n];
+
+		for(i=0;i<n;i++)
+		cin>>arr[i];
+
+			for(i=0;i<n;i++)
+			{
+				temp=100;
+					for(j=i;j<n;j++)
+						if(temp>arr[j])
+						{
+							temp=arr[j];
+							k=j;
+						}
+						arr[k]=arr[i];
+						arr[i]=temp;
+
+					for(l=0;l<n;l++)
+						cout<<" "<<arr[l];
+						cout<<endl;
+			}
+			cout<<"\n\nThe array after sorting : ";
+			for(i=0;i<n;i++)cout<<" "<<arr[i];
+			cout << "\n\nDesgin: Rafea Fheely\n\n";
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+//„À«· «» œ«∆Ì ⁄·Ï «·„’›Ê›« 
+#include <iostream>
+using namespace std;
+void main()
+{
+	int a[4];
+	int i,j;
+
+	for(i=0;i<4;i++)
+	{
+		cin >> a[i];
+	}
+	for(i=0;i<4;i++)
+	{
+		cout << a[i];
+	}
+	cout << endl;
+	for(j=0;j<4;j++)
+	{
+		cin >> a[j];
+		a[j]++;
+		cout << a[j];
+		//cout << a[3];
+	}
+	cout << endl;
+	for(j=1;j<3;j++)
+	{
+		cout << "Rafea Fheely\n";
+	}
+	for(j=0;j<i;j++)
+	{
+		cin >> a[j];
+	}
+	cout << "Good by\n";
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{ 
+	cout << "Enter 6 Numbers:\n";
+	int i,first_arry[6];
+
+	for (i=0;i<6;i++)
+
+		cin>> first_arry[i] ;
+
+	cout<<"the Content of array is .\n";
+
+	for (i=0;i<6;i++)
+
+		cout<< first_arry[i]<<"\t";
+
+	cout << "\n\nDesgin: Rafea Fheely\n"
+		<<"Visit Site:https://sites.google.com/site/rafeaedu/home\n\n";
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void main ()
+{
+ 
+	int i,a[7],max;
+	cout<<"enter 7 number\n";
+		for (i=0;i<7;i++)
+			cin>> a[i] ;
+			max=a[0];
+
+		for (i=0;i<7;i++)
+
+			if (a[i] > max )
+				max=a[i];
+				cout<< "the max = "<<max<<endl;
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+//Program to read five numbers, find their sum, and
+//print the numbers in reverse order.
+#include <iostream>
+using namespace std;
+int main()
+{
+int item[5]; //Declare an array item of five components
+int sum;
+int counter;
+cout << "Enter five numbers: ";
+sum = 0;
+for (counter = 0; counter < 5; counter++)
+{
+cin >> item[counter];
+sum = sum + item[counter];
+}
+cout << endl;
+cout << "The sum of the numbers is: " << sum << endl;
+cout << "The numbers in reverse order are: ";
+//Print the numbers in reverse order.
+for (counter = 4; counter >= 0; counter--)
+cout << item[counter] << " ";
+cout << endl;
+return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+// — Ì» «⁄œ«œ  ’«⁄œÌ«
+#include<iostream>
+using namespace std;
+int main()
+{
+
+	int a[4];
+	cout<<"enter array elements\n";
+	for(int i=0;i<4;i++)
+		cin>>a[i];
+
+	int b[4];
+	for(int i=0;i<4;i++)
+		b[i]=a[3-i];
+
+	for(int i=0;i<4;i++)
+		cout<<b[i];
+
+	return 0;
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+

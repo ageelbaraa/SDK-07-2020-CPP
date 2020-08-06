@@ -1,0 +1,24 @@
+# include <iostream>
+using namespace std;
+int main ()
+{
+/*ÈÑäÇãÌ Şñæã ÈÅÏÎÇá ÑŞã Ëã ØñÈÚ ãÑÈÚ ãä ÇáäÌãÇÊ stars ÃÈÚÇÏå å ÇáÑŞã
+ÇáãÏÎá İÅĞÇ ÃÏÎáÊ ÇáÑŞã 4 ßñæä ÚÏÏ ÇáäÌãÇÊ İ ÇáØæá 4 æİ ÇáÚÑÖ*/
+
+	int x,i,j;
+	cout<<"enter the size : ";
+	cin>>x; 
+	for(i=0;i<x;i++) 
+	{
+		for(j=0;j<x;j++)
+		{
+			if(i==0 || i==x-1 || j==0 || j==x-1)
+				cout<<"*";
+
+			else
+				cout<<" ";
+		}
+		cout<<"\n";}
+
+	return 0;
+}
