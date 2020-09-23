@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\User\source\repos\SDK-07-2020-Sec06\Code\Project1\Header1.h(32,24): warning C4584: 'Student': base-class 'Education' is already a base-class of 'School'
+C:\Users\User\source\repos\SDK-07-2020-Sec06\Code\Project1\Header1.h(6): message : see declaration of 'Education'
+C:\Users\User\source\repos\SDK-07-2020-Sec06\Code\Project1\Header1.h(18): message : see declaration of 'School'
+  Project1.vcxproj -> C:\Users\User\source\repos\SDK-07-2020-Sec06\Code\x64\Debug\Project1.exe

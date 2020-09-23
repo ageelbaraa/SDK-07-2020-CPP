@@ -1,0 +1,3 @@
+﻿  Main.cpp
+C:\Users\User\source\repos\SDK-07-2020-Sec06\SDK-07-2020-Sec06\Main.cpp(9,35): warning C4805: '|': unsafe mix of type 'int' and type 'bool' in operation
+  SDK-07-2020-Sec06.vcxproj -> C:\Users\User\source\repos\SDK-07-2020-Sec06\Debug\SDK-07-2020-Sec06.exe
