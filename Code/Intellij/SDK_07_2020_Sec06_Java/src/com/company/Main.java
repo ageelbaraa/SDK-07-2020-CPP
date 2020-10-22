@@ -73,6 +73,10 @@ public class Main {
 
         System.out.println(out);
 
+        System.out.printf("%5s\n","هانتانتيبانتيب");
+
+        System.out.printf(Locale.getDefault(),"%d",654654564);
+
 
 
 
