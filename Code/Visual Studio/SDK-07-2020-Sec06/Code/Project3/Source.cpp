@@ -81,6 +81,8 @@ int main() {
 	}
 	*/
 
+
+	/*
 	int array2d[2][3] = { {1,2,3},{4,5,6} };
 	cout << array2d[0][0] << endl;
 	cout << array2d[0][1] << endl;
@@ -89,7 +91,7 @@ int main() {
 	cout << array2d[1][1] << endl;
 	cout << array2d[1][2] << endl << endl;
 
-	// input 2 dimntional array 
+	// input 2 dimntional array
 	for (int i = 0; i < 2;i++) { // row
 		for (int j = 0;j < 3;j++) {// column
 			cin >> array2d[i][j];
@@ -98,7 +100,7 @@ int main() {
 	}
 
 
-	// output 2 dimntional array 
+	// output 2 dimntional array
 	for (int i = 0; i < 2;i++) { // row
 		for (int j = 0;j < 3;j++) {// column
 			cout << array2d[i][j] << endl;
@@ -106,6 +108,10 @@ int main() {
 
 	}
 
+	*/
+
+	for (;;);
+	
 
 
 
