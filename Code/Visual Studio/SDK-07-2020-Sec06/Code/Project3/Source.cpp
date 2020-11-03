@@ -4,6 +4,18 @@
 
 using namespace std;
 
+int countOfLetterInStatment(char* ptr) {
+	int count = 0;
+	while (ptr[count] != '\0')
+	{
+		count++;
+	}
+
+	return count;
+}
+
+
+
 int main() {
 
 	/*
@@ -19,7 +31,7 @@ int main() {
 	for (int i = 0; i < size;i++) {
 		cout << "pi[" << i << "] = " << pi[i] << endl;
 	}
-	
+
 
 	int numbers[8] = { 354,524,2165,25,351,215,4,5465 };
 	int minElement = 0, minElementIndex = 0;
@@ -110,16 +122,15 @@ int main() {
 
 	*/
 
-	for (;;);
-	
-
-
-
-
-
-	
+	char name[100];
+	cout << "Enter Your Name : ";
+	cin >> name;
+	cout << endl;
+	cout << "The Letter Count in name is : " << countOfLetterInStatment(name) << endl;
 
 }
+
+
 
 
 
