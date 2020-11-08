@@ -15,7 +15,7 @@ public class StringOperations {
                 "Both can be used for commercial development";
 
         String str = "IntelliJ IDEA is an integrated development";
-        String str2 = " ";
+        String str2 = "";
         System.out.println(str2.isEmpty());
         System.out.println(str2.isBlank());
 
